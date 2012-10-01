@@ -1,0 +1,150 @@
+\ProvidesPackage{mathe-vorlesung}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{ngerman}
+
+\usepackage[a4paper,left=25mm,right=25mm, top=20mm, bottom=40mm]{geometry}
+
+
+\usepackage{hyperref}
+
+\usepackage{bbm}
+\usepackage{algpseudocode}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{amsthm}
+\usepackage{ntheorem}
+\usepackage{enumerate}
+\usepackage{parskip}
+\usepackage{changepage}
+\usepackage{graphicx}
+
+\usepackage{framed}
+\usepackage{pstricks}
+
+%\usepackage{mathtools}
+
+%\renewcommand{\proofname}{\normalfont\itshape\underline{Beweis}}
+
+\theoremstyle{break}
+\theorembodyfont{\normalfont}
+\theorempreskipamount 1.5em
+\theoremindent 1em
+\theoremheaderfont{\kern-1em\normalfont\bfseries}
+
+%\theorempreskip{} 
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{df}[thm]{Definition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{st}[thm]{Satz}
+\newtheorem{kor}[thm]{Korrolar}
+\newtheorem{alg}[thm]{Algorithmus}
+
+\renewtheorem*{thm*}{Theorem}
+\renewtheorem*{df*}{Definition}
+\renewtheorem*{lem*}{Lemma}
+\renewtheorem*{prop*}{Proposition}
+\renewtheorem*{st*}{Satz}
+\renewtheorem*{kor*}{Korrolar}
+\renewtheorem*{alg*}{Algorithmus}
+
+\theoremheaderfont{\kern-1em\bfseries\small\itshape}
+\newtheorem*{proof}{Beweis}
+\newtheorem*{ex}{Beispiel}
+\newtheorem*{exs}{Beispiele}
+\newtheorem*{merke}{Merke:}
+
+\newtheorem*{note}{Bemerkung}
+
+% Skript Zeichen
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+\newcommand{\scr}[1]{\mathpzc {#1}}
+
+% Zahlenmengen
+\newcommand{\K}{\mathbb{K}} % Körper
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Q}{\mathbb{Q}}
+\renewcommand{\P}{\mathbb{P}}
+
+% Griechische Buchstaben
+\renewcommand{\phi}{\varphi}
+\renewcommand{\epsilon}{\varepsilon}
+
+
+\newcommand{\Id}{\mathbbm{1}}
+\newcommand{\Eins}{\mathbbm{1}}
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Eig}{\operatorname{Eig}}
+\newcommand{\Mat}{\operatorname{Mat}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\adj}{\operatorname{adj}}
+\newcommand{\ad}{\operatorname{ad}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Abb}{\operatorname{Abb}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\rg}{\operatorname{rg}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\isomorph}{\cong}
+\newcommand{\orth}{\perp}
+\newcommand{\cond}{\operatorname{cond}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\ggT}{\operatorname{ggT}}
+\newcommand{\kgV}{\operatorname{kgV}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\card}{\operatorname{card}}
+\newcommand{\SO}{\operatorname{SO}}
+\newcommand{\Index}{\operatorname{Index}}
+
+
+\newcommand{\fixme}[1][]{\;\texttt{FIXME:} #1\;}
+
+\newcommand{\texp}[1]{\text{\footnotesize [#1]}}
+\newcommand{\const}{\text{const}}
+\newcommand{\txt}{\text}
+\renewcommand{\d}{\partial}
+\renewcommand{\_}[1]{\overline{#1}}
+\newcommand{\f}[2]{\frac{#1}{#2}}
+%\renewcommand{\l}[1][\left{#1}]
+%\renewcommand{\r}[1][\right{#1}]
+
+\renewcommand{\vec}[1]{\overrightarrow{#1}}
+
+% Skalarprodukt
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+
+
+\newenvironment{seg}[1]{
+	\underline{#1}
+	\begin{adjustwidth}{1.3em}{0em}
+}{
+	\end{adjustwidth}
+}
+
+% Algorithmen
+\newcommand{\Input}{\Require}
+\newcommand{\Assume}{\Require}
+\newcommand{\Assert}{\Require}
+\newcommand{\Output}{\Ensure}
+
+\newcommand{\jota}{\iota}
+\newcommand{\my}{\mu}
+
+% Leckerli für amsmath-Matrizen
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
