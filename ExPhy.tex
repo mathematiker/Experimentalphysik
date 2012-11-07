@@ -585,5 +585,132 @@ Für die \emph{Periodendauer} $T$ (Zeit für einen Umlauf) ergibt sich $T=\frac{
 
 Für $\omega=\txt{const.}$ ist auch $|v|=\const$, aber die Richtung von $\vec v$ ändert sich, da sie tangential zur Bahnkurve gerichtet ist. 
 \end{seg}
+\fixme[Vorlesung 5 und 6 fehlen]\\
+\fixme[Bild fehlt]\\
+\begin{itemize}
+ \item 
+\begin{seg}{Zentripetalkraft}
+\fixme[Bild fehlt]\\
+\begin{align*}
+ |\vec a|&=\omega^2\cdot R\\
+F&=m\omega^2\cdot R\\
+\omega&=\frac{v}{R}, F=\frac{mv^2}{R}
+\end{align*}
+\end{seg}
+\item 
+\begin{seg}{Federkraft}
+ \fixme[Bild fehlt]\\
+Diese Gesetzmäßigkeit nennt man das \emph{Hooksche Gesetz}. Man bezeichnet $D$ als Federkonstante.
+\end{seg}
+\subsection{Scheinkräfte}
+Bisher haben wir noch kein Bezugssysteme fesgelegt. Dies möchten wir nun tun.
+\begin{df}[Inertialsystem]
+ Ein \emph{Inertialsystem} ist ein Bezugssystem für das, das II. Netwonsche Axiom gilt ($F=ma$)
+\end{df}
+Bei einem beschleunigten Bezugssystem scheinen die Newtonsche Axiome verletzt zu sein. Es entstehen sogenannte \emph{Scheinkräfte}
+\subsubsection{geradlinige beschleunigte Bewegung}
+\begin{enumerate}[a)]
+ \item \fixme[Bild fehlt]\\
+\begin{seg}{Ruhender Betrachter}
+ein Beobachter, der relativ ruhend zum System, in dem sich der Wagen bewegt, sich befindet.
+\underline{Der Körper bleibt in Ruhe}. Dies ist klar, da keine Kraft auf Körper wirkt.
+\end{seg}
+\begin{seg}{Mitbewegter Beobachter}
+ Körper bewegt sich nach links. Eine Kraft muss auf den Körper wirken.
+\end{seg}
+Es kommt zu einer so genannten \emph{Scheinkraft} $\vec F_s=-m\cdot \va=-\vec F$.
+\item \fixme[Bild fehlt]
+Bei Beschleunigung wird Feder zunächst etwas zusammengedrückt. Zunächst etwas zusammengedrückt und bleibt, dann in diesem konstant. Spannungszustand.
+\begin{seg}{Ruhender Beobachter}
+ Körper bewegt sich mit $\va$ nach rechts. Es gilt $\vec F=m\cdot \va$. Die Ursache der Kraft $\vec F$ ist klar.\\
+\fixme[Bild fehlt]
+\end{seg}
+\begin{seg}{Beschleunigter Beobachter}
+ Körper bleibt in Ruhe. Also gilt für die Kraft $F\stackrel{!}{=}0$. Die Federkraft muss durch weitere Kraft kompensiert werden.
+\[
+ \vec F_D+\vec F_S=0
+\]
+\fixme[Bild fehlt]
+\end{seg}
+Generell gilt: Scheinkräfte mussen eingeführt werden, wenn Messungen in beschleunigten Bezugssystemen durchgeführt werden.
+(In Inertialsystemen existieren dagegen keine Scheinkräfte.)
+\begin{ex*}[Maxwellsches Rad]
+\fixme[Bild fehlt]
+Sowohl bei Abwärts- als auch bei Aufwärstsbewegung ergibt sich eine scheinbar \underline{kleinere} Masse.
+\end{ex*}
+\begin{att*}
+ Beschleunigung zeigt in beiden Fällen nach unten
+\end{att*}
+\subsubsection{Scheinkräfte in rotierenden Bezugssystemen}
+\begin{ex*}
+ \fixme[Bild fehlt]
+\begin{seg}{Ruhender Beobachter $S'$}
+ $S'$ beobachtet eine geradlinige, gleichförmige Bewegung des Objekts, da $\vec F=0$
+\end{seg}
+ \begin{seg}{Mitbewegter Beobachter $S$}
+  Objekt scheint von fiktiver Kraft vom Waggon geschleudert zu werden. 
+ \end{seg}
+\end{ex*}
+Wir bezeichnen das ruhende Bezugssystem mit $S'(x',y',z')$ (grün) und das rotierende Bezugssystem mit $S(x,y,z)$.
+Ein Spezialfall stellt beispielsweise die Rotation mit $\w$ um die $z$-Achse 
+\\ \fixme[Bild fehlt]\\
+Ein Körper der Masse $m$ bewege sich in $S'$ auf Trajektorie:
+\[
+ \vec r'(t)=x'(t)\cdot \vec{e_x}'+y'(t)\cdot \vec{e_y}'+z'(t)\cdot \vec{e_z}
+\]
+Wir beschreiben die identische Bahn von $S$ nun auf $\vec r'(t)=\vec r(t)$:
+\begin{align*}
+ \vec r'(x)&=\vec r(x)=x(t)\cdot \vec{e_x}+y(t)\cdot \vec{e_y}+z(t)\cdot \vec{e_z}\\
+\frac{d\vec r'}{dt}&=\frac{d\vec r}{dt}=\underbrace{\left ( \frac{dx}{dt}\cdot \vec{e_x}+\frac{dy}{dt}\cdot \vec{e_y}+\frac{dz}{dt}\cdot \vec{e_z}\right )}_{
+\text{\tiny{Geschwindigkeit im rotierenden Bezugssystem}}}+\underbrace{\left (\frac{d\vec{e_x}}{dt}\, x+\frac{d\vec{e_y}}{dt}\,y+\frac{d\vec{e_z}}{dt}\,z \right )}_{\text{\tiny{Rotation, der EInheitsvektoren von $S'$ aus betrachtet}}}
+\end{align*}
+\begin{seg}{Zeitliche Ableitung eines Vektors}
+ \fixme[Bild fehlt]
+\begin{align*}
+ |d\vec{u}|&=d\phi\cdot u_\perp\\
+ |\frac{d\vec{u}}{dt}|&=\fracac{dy}{dt}\cdot \vec{e_y}+\frac{dz}{dt}\cdot \vec{e_z}\right ){d\phi}{dt}\cdot u_\perp=|\w|\cdot u_\perp
+\end{align*}
+Es ist $\vec u \cdot \sin\gamma=u_\perp$:
+\[
+ |\frac{d\vec{u}}{dt}|=|\w|\cdot |\vec u|\cdot \sin \gamma
+\]
+Die Richtung von $\frac{d\vec{u}}{dt}$, ist gerade orthogonal zu $\vec{\w}, \vec u )$ (für $d\phi\rightarrow 0$).
+Daraus ergibt sich 
+\[
+ \boxed{\frac{d\vec{u}}{dt}=\w\times \va}=w\cdot u \cdot \sin \gamma
+\]
+\begin{seg}{Spezialfall} 
+$S'(x',y',z')$ ist ruhend und $S(x,y,z)$ toriert mit $\omega$ um die $z$-Achse. Ruhe der Massepunkt in $S'$. Also gilt $v'=0$. 
+\begin{seg}{Frage}
+Wie sieht Bewegun von $S$ betrachtet aus?
+\end{seg}
+\fixme[Bild fehlt]\\
+(Der Ortsvektor ergibt sich unabhängig von Bezugssystem).
+\[
+ \frac{d\vec{r'}}{dt}=\frac{d\vec r}{dt}=0=\underbrace{\v}_{\text{\tiny{Geschwindigkeit in $S$}}}+
+\underbrace{\frac{d\vec{e_x}}{dt}x+\frac{d\vec{e_y}}{dt}y+\frac{d\vec{e_z}}{dt}z}_{\vec\w\times\vec{r}}
+\]
+Also:
+\[
+ \boxed{\vec v=-\omega \times \vec r}
+\]
+Nehmen wir an $\w \perp \vec r$.
+\begin{align*}
+|\vec{v}|&=-|\w|\cdot |\vec r|\cdot \sin\phi\\
+|\vec{v}|&=-|\w|\cdot |\vec r|
+\end{align*}
+\fixme[Bild fehlt]
+
+
+
+
+
+\end{enumerate}
+
+
+
+      
+
+\end{itemize}
 
 \end{document}
