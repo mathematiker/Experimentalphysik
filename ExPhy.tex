@@ -602,6 +602,7 @@ F&=m\omega^2\cdot R\\
  \fixme[Bild fehlt]\\
 Diese Gesetzmäßigkeit nennt man das \emph{Hooksche Gesetz}. Man bezeichnet $D$ als Federkonstante.
 \end{seg}
+\end{itemize}
 \subsection{Scheinkräfte}
 Bisher haben wir noch kein Bezugssysteme fesgelegt. Dies möchten wir nun tun.
 \begin{df}[Inertialsystem]
@@ -666,10 +667,10 @@ Wir beschreiben die identische Bahn von $S$ nun auf $\vec r'(t)=\vec r(t)$:
 \end{align*}
 \begin{seg}{Zeitliche Ableitung eines Vektors}
  \fixme[Bild fehlt]
-\begin{align*}
- |d\vec{u}|&=d\phi\cdot u_\perp\\
- |\frac{d\vec{u}}{dt}|&=\fracac{dy}{dt}\cdot \vec{e_y}+\frac{dz}{dt}\cdot \vec{e_z}\right ){d\phi}{dt}\cdot u_\perp=|\w|\cdot u_\perp
-\end{align*}
+%   \begin{align*}
+%    |d\vec{u}|&=d\phi\cdot u_\perp\\
+%    |\frac{d\vec{u}}{dt}|&=\frac{dy}{dt}\cdot \vec{e_y}+\frac{dz}{dt}\cdot \vec{e_z}\right )\frac{d\phi}{dt}\cdot u_\perp=|\w|\cdot u_\perp
+%   \end{align*}
 Es ist $\vec u \cdot \sin\gamma=u_\perp$:
 \[
  |\frac{d\vec{u}}{dt}|=|\w|\cdot |\vec u|\cdot \sin \gamma
@@ -679,8 +680,10 @@ Daraus ergibt sich
 \[
  \boxed{\frac{d\vec{u}}{dt}=\w\times \va}=w\cdot u \cdot \sin \gamma
 \]
+\end{seg}
 \begin{seg}{Spezialfall} 
-$S'(x',y',z')$ ist ruhend und $S(x,y,z)$ toriert mit $\omega$ um die $z$-Achse. Ruhe der Massepunkt in $S'$. Also gilt $v'=0$. 
+$S'(x',y',z')$ ist ruhend und $S(x,y,z)$ toriert mit $\omega$ um die $z$-Achse. Ruhe der Massepunkt in $S'$. Also gilt $v'=0$.
+\end{seg} 
 \begin{seg}{Frage}
 Wie sieht Bewegun von $S$ betrachtet aus?
 \end{seg}
@@ -700,17 +703,466 @@ Nehmen wir an $\w \perp \vec r$.
 |\vec{v}|&=-|\w|\cdot |\vec r|
 \end{align*}
 \fixme[Bild fehlt]
+%
+\begin{seg}{Scheinkräfte}
+ \fixme[Bild fehlt]
 
+\end{seg}
+\[
+ \frac{d\vec{r}'}=\v+\w\times \vec r
+\]
 
+\[
+ \vec v=-\w\times \vec r
+\]
+\fixme[Bild fehlt]
+%
+% Es gilt wegen $\frac{dr'}{dt}=\frac{dr}{dt}$:
+% % \begin{align}
+% %  \boxed{\frac{\v}{dt}&=\v+\w\times \vec r} \label{(I).1} \\
+% %  \boxed{\frac{\v}{dt}&=\va+(\omega\times \v)} \label{(II).1}
+% % \end{align}
+% Nach ableiten nach der Zeit von \ref{(I).1}:
+% \begin{align*}
+% \frac{d^2\vec r}{dt^2}&=\frac{d\v}{dt}(\w\times \vec r) \\
+% &\stackrel{\w=\const.}{=}\frac{d\v}{dt}+\omega\times \vec{d\vec r}{dt}\\
+% \frac{d^2\vec r}{dt^2}&=\va + 2(\w\times \v)+\w\times(\w\times \vec r)
+% \end{align*}
+% Zusammen mit $\boxed{\frac{d\vec r'}{dt}=\frac{d\vec r}{dt}$ folgt:
+% \[
+%  \boxed{d^2\vec r'}{dt^2}=\frac{d^2\vec r}{dt^2}
+% \]
+% Es gilt im Inertialsystem:
+% \[
+%  \vec F'=\frac{d^2\vec r}{dt^2}\cdot m
+% \]
+% Die Kraft im Inertialsystem ergibt sich also zu:
+ \[
+  \underbrace{\vec F'}_{\text{\tiny{Kraft im Inertialsystem}}}=\underbrace{m\cdot a}_{\text{\tiny{Kraft im rotierenden System}}}
+ +\underbrace{2m(\omega\cdot \vec v)+m\cdot \w\times (\w\times \vec r)}_{\text{\tiny{Scheinkräfte, treten in S auf}}}
+ \]
+ 
+ \fixme[sortieren des Inhalts]
+ \[
+  \underbrace{\vec F'}_{\text{\tiny{\fixme}}-\underbrace{2m(\omega\times \v)
+-m\omega\times(\omega\times\vec r)}_{\text{\tiny{Scheinkräfte}}}
+=\underbrace{m\times a}_{\text{ $\vec F$ in rotierenden System}}}=\vec F
+ \]
+ \fixme[Bild fehlt]
+ Die Zentrifugalkraft wird bezeichnet mit:
+ \[
+  \vec{F_z}:=-m\omega\times \omega \times \vec r 
+ \]
+ Die Corioliskraft wird bezeichnet mit:
+ \[
+  \vec{F_c}:=-3m\w\times \vec r
+\]
+ \begin{seg}{Zentrifugalkraft}
+ \begin{seg}{Ruhender Beobachter}
+ \fixme[Bild fehlt]
+ Körper bewegt sich auf Kreisbahn. Es wirkt eine Zentripetalkraft $\vec F_d=-D\cdot \vec x$ nach \emph{innen} gerichtet!
+ \[
+  |\vec F=m\cdot \omega ^2\cdot r
+ \]
+ \end{seg}
+ \begin{seg}{rotierender Beobachter}
+ Körper in Ruhe... Die Resultierende Kraft ist null.  $F_D$ muss kompensiert werden durch Kraft nach außen
+ \[
+  \vec F_D+\vec F_Z\stackrel{!}{=}0
+ \]
+ \[
+  \vec F_Z=-m\cdot \omega\times \omega \times \vec r \text{ (nach außen gerichtet)}
+  \]
+ \[
+ |\vec F_Z|=m\cdot \omega ^2\cdot r  
+  \]
+ \end{seg}
+\end{seg}
+\begin{seg}{Kettenkarussel}
+ \fixme[Bild fehlt]
+$\omega \perp \vec r$, $|F_z|=m\omega^2\cdot r$, $\tan\phi=\frac{F_Z}{F_G}=\frac{\omega^2\cdot r}{g}$
 
-
+technische Anwendungen
+\begin{itemize}
+\item Ventielregelung
+\item Sicherheitsgurt \fixme[Bild fehlt]
+\end{itemize}
+\end{seg}
+\begin{seg}{Corolioliskraft}
+ $\vec F_c=-2m\cdot \omega \times \v$\\
+$F_C\neq 0$, wenn sich Objektion im rotierenden Bezugssystem bewegt: \fixme[Bild fehlt]
+\end{seg}
+\begin{exs*}[Corioliskraft]
+\begin{itemize}
+ \item Baersches Gesetz \fixme[Bild fehlt]
+Es ist $\vec F_C=-2m\cdot \vec \omega_E\times \underbrace{\v}_{\text{\tiny{Flußgeschwindigkeit}}}$
+\item Wirbelrichung von Hoch- und Tiefdruckgebieten:
+\fixme[Bild fehlt]
+Das Obiges Resultat ist falsch!
+\fixme[Bild fehlt]
+\end{itemize}
+\end{exs*}
+Die Erde ist kein Intertialsystem aufgrund der Erdrotation.  Sie ist ein \emph{formalisiertes Pendel}
+\fixme[Bild fehlt]\\
+\begin{enumerate}[(A)]
+\item Inertialsystem:
+Beobachtung: Pendelebene konstant obwohl sich Aufhängung mit der Erde dreht.
+\item rotierender
+Schwingungsebene des Pendels ändert sich mit der Zeit. Es gibt eine Corioliskraft. Am Nordpol:
+\begin{align*}
+24\text{h}&\hat = 360°\\
+10 \text{min} &\hat = 2.5°
+\end{align*}
+\fixme[Bild fehlt]
+Am Äquator hat kein Effekt.\\
+In Stuttgart: $24h\hat =273,5°$
+\end{enumerate}
 
 \end{enumerate}
+
+% \subsection{Der Energieerhaltungssatz}
+% \subsubsection{Arbeit}
+% \fixme[ Bild fehlt]
+% \begin{align*}
+%  \Delta W_I&:=\vec F(\vec r_i)\cdot \Delta \vec r_i\\
+%  &=|\vec F_i|\cdot |\Delta \vec r_i|\cdot \cos(\phi)\\
+% W(a,e)&=\vec F(\vec r_1)\cdot +\vec F(\vec r_2)\cdot \Delta \vec r_2+...\\
+% &=\sum_i F(\vec r_i)\cdot \Delta \vec r_i
+% \end{align*}
+% 
+% \end{enumerate}
+% Wir definieren die Arbeit entlang eines Weges von $a$ nach $e$.
+% \fixme[Bild fehlt]
+% \begin{df}[Arbeit $W_{(a,e)}$]
+%  Die Arbeit $W_{(a,e)}$ ist definiert also
+% \[
+%  W_{(a,e)}:=\int\limits_{a}^e \vec F(\vec r)\cdot d\vec r                                          
+% \]
+% \end{df}
+% Es handelt sich um das Skalarprodukt zweier Komponente des Kraftfeldes $\vec F(\vec r)$ entlang der Bahnkurve $\vec r$. Arbeit ist das Integral $\vec F d\vec{r}$ auf dem Weg von $a$ nach $e$. Die Dimension $N\times m=\frac{hgm}{s^2}=Joule(J)=Wattsekunde(\text{Ws})$
+% \begin{seg}{einfache Integrationswege}
+%  \begin{enumerate}
+%   \item Beispiel: Hubarbeit\\
+% \fixme[Bild fehlt]\\
+% Masse $m$ ganz langsam nach oben ziehen von $a$ nach $e$ Kraft hierfür $|\vec F|=|\vec F_G|$. Dies kann man zum Beispiel mit der Federwaage messen.
+% 
+% \[
+%  \vec F d\vec{r} = \begin{pmatrix} F_x\\ F_y\\ F_z \end{pmatrix} \times \begin{pmatrix} dx\\ dy \\ dz \end{pmatrix}=\[
+%  W=\int_{z(a)}^{z(e)} \vec F(\vec r)\cdot d\vec{r}
+% \]\underbrace{F_x dx}_{=0}+\underbrace{F_ydy}_{=0}+F_z dz=F_z dz
+% \]
+% \begin{align*}
+%  W&=\int_{z(a)}^{z(e)} \vec F(\vec r)\cdot d\vec{r}\\
+% &= \int_{z(a)}^{z(e)} m\cdot g dz=mg (z(e)-z(a))=m\cdot g \cdot h
+% \end{align*}
+% jetzt nicht senkrecht sondern schräg.\\
+% \fixme[Bild fehlt]
+% Da $F_g$ nur nach unten wirkt, sind keine Kräfte notwendig, um die Masse in $x-$ und $y-$ Richtung zu verschieben. $\implies F_x=F_y=0_{z(e)}$.
+% \[
+%  W=\int_{x(a)}^{x(e)}0\cdot dx+\int_{y(a)}^{y(e)} 0 dy+\int_{z(a)}^{z(e)} m\cdot g dz=m\cdot g\cdot h
+% \]
+% Arbeit ist unabhängig vom speziellen Weg von $a$ nach $e$\\
+% Schiefe Ebene mit reibungsfreier Unterlage:\\
+% \fixme[Bild fehlt]
+
+Zerlegung von $F_g$ in\\
+$\vec F_H=m\cdot g\cdot \sin \alpha \to \text{führt zur Bewegung}$
+$\vec F_N=m\cdot g\cdot \cos \alpha \to \text{ von Unterlage aufgenommen}$
+ebenso Zergelung von $|\vec F|=|\vec F_H| in m\vec F=\vec F_z+\vec F_x$
+\begin{align*}
+ F_z&=F_H\cdot \sin \alpha =m\cdot g \cdot \sin^2 \alpha=\const.\\
+ F_x&= F_H\cdot \cos \alpha =m\cdot g\cdot \sin \alpha \cdot \cos \alpha=\const.
+\end{align*}
+
+Es gilt $\tan\alpha=\frac{h}{x(e)-x(a)}=\frac{\sin\alpha}{\cos\alpha}$ und $x(e)-x(a)=h\cdot \frac{\cos\alpha}{\sin\alpha}$
+\begin{align*}
+ W(a,e)&=\int_{x(a)}^{x(e)} F_x dx+\int_{z(a)}^{z(e)} F_z dz\\
+ &= m \cdot g \cdot \sin \alpha \cdot \cos \alpha \int_{x(a)}^{x(e)} dx+ m\cdot g\cdot \sin^2 \alpha \int_{z(a)}^{z(e)} dz\\
+ &= m\cdot g\cdot \sin \alpha\cdot \cos\alpha (x(e_1)-x(a))+m\cdot g \cdot \sin^2{\alpha} \underbrace{(z(e)-z(a))}_h\\
+ &=m\cdot g\cdot h\underbrace{(\cos^2\alpha +\sin^2\alpha)}_{=1}=m\cdot g\cdot h 
+\end{align*}
+Die Hubarbeit ist identisch zu oben, dass heißt unabhängig von der Verbindungskurve von $a$ nach $e$
+%\item
+\begin{seg}{Spannarbeit}
+\fixme[Bild fehlt]
+Dehnung einer Feder Körper liegt reibungsfrei auf Unterlage, die Gravitation ist daher nicht zu berücksichtigen.
+ 
+Soll Feder gedehnt werden, so muss gezogen werden mit Kraft $\vec F=-\vec F_{el}=Dx (\text{Hooksches Gesetz})\neq \const.$
+\[
+ W(0,x_e)=\int\limits_0^{x_e} F(x) dx=\int_0^{x_e} D\cdot x\,dx=\frac{1}{2} D \cdot x^2 |_0^{x_e}= \frac 1 2 D x_e^2
+\]
+\end{seg}
+%  \end{enumerate}
+% 
+% \end{seg}
+\subsection{Potentielle und kinetische Energie}
+Anmerkung: Im obigen Beispielen wurde gegen eine Kraft (Schwerkraft, Federkraft) Arbeit geleistet.
+\begin{itemize}
+ \item Dem Körper wurde Energie zugeführt. Wo steckt die Energie?
+ \item Als potentielle Energie in Feder bzw. hochgehobene Masse
+\end{itemize}
+Also hat $E_{pot}$ ebenfalls Dimension einer Arbeit. Wir beschränken uns zunächst auf Kräfte, für die die Arbeit, die sie auf einem Weg $a$ nach $e$ verrichten, 
+unabhängig von der Form des Weges ist. Man spricht von \emph{konservative Kräfte}.\\
+Ein Beispiel für konservative Kräfte\\
+\begin{itemize}
+ \item elastische Federkraft
+ \item Gewichtskraft
+ \item elektrostatische Coulombkraft
+\end{itemize}
+Beispiel für nicht  konservative Kräfte\\
+\begin{itemize}
+ \item Reibungskraft
+ \item Lorentz-Kraft(Geschwindigkeitsabhängig)
+\end{itemize}
+Für eine \underline{eindeutige Definition} von $E_pot$ benötigen wir noch einen Bezugspunkt $p_0$, dieser ist frei wählbar.
+Damit $E_{pot}(p):= -\int_{p_0}^{p} \vec F(\vec r)d\vec{r}$.
+Damit entspricht die \emph{potentielle Energie} $E_{pot}$ gerade dem negativen Wert der Arbeit vom Körper von $p_0$ nach $p$ zu bringen.
+\begin{att*}
+ Die Gleichung
+\[
+ \boxed{W=-E_{pot}}
+\]
+gilt nur für konservative Kräfte
+\end{att*}
+Neben potentieller Energie (statischer Natur zum Beispiel gespannte Feder) kann auch noch Energie in der Bewegung eines Körpers gespeichert werden
+Diese bezeichnen wir als \emph{kinetische Energie} $E_kin$. Wir klären nun den Zusammenhang zwischen $E_{pot}$ und $E_{kin}$?
+Betrachte Masse $m$ unter Einfluss einer Kraft $\vec F(\vec r)$.\\
+\fixme[Bild fehlt]
+Zur Zeit $t$: Körper am Ort $\vec r(t)$ mit Geschwindigkeit $\vec v(t)$.
+Geschwindigkeitsänderung unter Einfluss von $\vec F$ im Zeitintervall $dt$?
+es gilt $\vec F=m\cdot \vec a=m\cdot \frac{d\vec{v}}{dt}$ zu $d\vec{v}=\frac{\vec F}{m} dt$ 
+bzw. $md\vec v=\vec F d\vec{v}$ ($*$). ELimiere damit $dt$ aus ($*$) $m\cdot \vec v dv=\vec F\d\vec{r}$ $(**)$
+
+Was ist $\vec v \, d\v$?\\
+Der Trick:
+\[
+ d(\vec v \cdot \vec v)=d(v^2)=\vec v d\vec v+(d\vec v)\vec v=2\vec v d\vec v
+\]
+\[
+ \vec v d\vec v=d(\frac{v^2}{2})
+\]
+ damit gilt für ($**$) $d(\frac{mv^2}{2})-\vec F d\vec r=0$
+bzw. nach Integration über kleine Wegstrecke:
+  \[
+   \boxed{\frac{1}{2}m\v^2+E_{pot}=\const.}
+  \]
+\begin{note*}
+ Wir definieren die \emph{kibernetische Energie} $E_{kin}$ durch:
+\[
+ E_{kin}:=\frac{1}{2}mv^2
+\]
+ \begin{itemize}
+  \item gilt für abgeschlossene Systeme, dass heißt ohne äußere Kräfte
+  \item gilt i Abwesenheit von Reibung sonst $E_kin+E_pot+E_R=\const.$, wobei $E_R$ die durch Reibung in Wärme umgewandelte Energie meint.
+ \end{itemize}
+\end{note*}
+\begin{seg}{Anwendungen des Energieerhaltungssatzes}
+ \begin{enumerate}[a)]
+  \item senkrechter Wurf
+\fixme[Bild fehlt]
+Am Anfang nur kinetische Energie:
+\[
+ E_kin=\frac{1}{2} m v_0^2: E_pot=0
+\]
+Am Umkehrpunkt:
+nur potentielle Energie $E_{pot}=-g\cdot h$\\
+\[
+ E_{pot}+E_{kin}=E_{ges}=\const.
+\]
+\fixme[Bild fehlt]
+\item Schiefe Ebene ohne Reibung
+\fixme[Bild fehlt]\\
+Masse zunächst in Ruhe, dann loslassen Geschwindigkeit bei $h=0$? zunächst $E_pot=m\cdot g\cdot h; E_{kin}=0$\\
+unte ($h=0$) $E_pot=0; E_kin=\frac{1}{2} mv^2$
+\[
+ E_pot+E_kin=m\cdot g\cdot h+\frac{1}{2} m v^2
+\]
+da $E_{pot} +E_{kin}=\const.$ (unabhängig von Zeit und Ort)
+\[
+ \frac{1}{2} mv^2=m\cdot g\cdot h\to v=\sqrt{2gh}
+\]
+Anwendungen des Energiesatzes:
+\item Fadenpendel\\
+\fixme[Grafik fehlt]\\
+Beispiel: Für periodeische Umwandlungen von $E_{kin}$ und $E_{pot}$ Kugel auslenken und loslassen. Dann ändert sich $\phi$ periodisch.
+Bewegungsgleichung für $\phi(t)$ lässt sich aus dem Energiesatz ableiten:
+Es gilt: 
+\[\boxed{E_{pot}=-m\cdot g\cdot \underbrace{l\cdot \cos{\phi}}_h}\]
+\begin{df}[Energienullpunkt]
+ Wir bezeichnen $E_{pot}=0$ in $z=0$
+\end{df}
+Die pendelnde Kugel legt in der Zeit $dt$ die Strecke $dr=l\cdot d\phi$ zurück:
+\[
+ v=\frac{dr}{dt}=l\cdot \frac{d\phi}{dt}=l\cdot \dot \phi
+\]
+damit ergibt sich für die kibernetische Energie:
+\[
+ \boxed{E_kin=\frac{1}{2}mv^2=\frac{ml^2}{2}\cdot \dot \phi^2}
+\]
+Energiesatz: $E_kin+E_pot=\frac{ml^2}{2}\dot \phi(t)^2-m\cdot g\cdot l\cdot \cos{\phi(t)}=E_{pot}=\const.$\\
+das $E_{pot}=\const.\rightarrow \frac{dE_{pot}}{dt}=0$ und damit:
+\[
+ \frac{ml^2}{2}2\dot \phi \ddot \phi+mgl\sin\phi(t)\dot \phi=0
+\]
+Division durch $ml^2\dot \phi$ (im Allgemeinen ungleich $0$, Vorisch bei $\dot \phi=0$)\\
+\[
+ \boxed{\ddot\phi+\frac{g}{l}\sin\phi=0}
+\]
+Es handelt sich um eine nichtlineare Diffenzialgleichung. Unter Betrachtung der Kleinwinkelnäherung $\sin\phi\neq \phi$.  Dies ist eine lineare Differenzialgleichung. Es ergibt sich:
+\[
+ \boxed{\ddot \phi+\frac{g}{l}\phi=0}
+\]
+Es handelt sich um eine Schwingungsgleichung. Die Lösung ergibt sich mit dem Ansatz der $\cos$-Funktion und Einsetzen.\\
+Ansatz: $\phi(t)=\phi_0\cdot \cos(\w t-\alpha)$, wobei $\phi_0$ die Amplitude bzw. maximale Aulenkung beschreibt und $\alpha$ die Phase festgelegt durch Auslenkung bei $t=0$.
+\begin{align}
+ \dot \phi(t)=-\w\phi_0\sin(\w t - \alpha)\label{II.2}\\
+ \ddot \phi(t)=-\w^2\underbrace{\phi_0\cos(\w t-\alpha)}_{=\phi(t)}=-\w^2\phi(t)\label{III.2}
+\end{align}
+setzen wir \ref{III.2} in die DGL ein: $-\omega^2\phi+\frac{g}{l}=0\rightarrow \omega=\sqrt{g}{l}=2\phi\cdot f$.
+Bestimmung von $\alpha$ aus Anfangsbedingungen:
+\[
+ \phi(t=0)=\phi_0\cos(0-\alpha)=\phi_0\cos\alpha
+\]
+wenn zum Beispiel $\phi(0)=\phi_0$ (maximale Auslenkung), dan ist $\alpha=0$ Periodendauer des Pendels $T=\frac{2\pi}{\omega}=2\pi\sqrt{\frac{l}{g}}$
+nachdem $\phi(t)$ jetzt bekannt ist, so wollen wir den Energiesatz prüfen:
+\[
+ E_{kin}(t)=\frac{ml^2\dot \phi(t)}2=\frac{ml^2}2 \w^2 \phi_0^2 \sin^2(\w t)
+\]
+\[
+ E_{pot}(t)=-m\cdot g\cdot l\cdot \cos{\phi}\approx-mg\cdot l(1-\frac{1}{2}\phi^2))
+\]
+Wir benutzen hier die Taylorentwicklung unter Vernachlässigung von Fehlerprodukte von kleinen Winkel $\phi$. Und damit:
+\[
+ E_{pot}(t)=-m\cdot g\cdot l(1-\frac 1 2 \phi_0^2\cos^2(\w t))
+\]
+Energiesatz:
+\[
+ E_{kin}+E_{pot}=\frac{ml^2}{2}\cdot \underbrace{\frac{g}{l}}_{\w^2}\phi_0^2 \sin^2(\omega t)+\frac{m\cdot g\cdot l}2 \phi_0^2\cos^2(\omega t)-m\cdot g\cdot l=\frac{mlg}{2}\cdot \phi_0^2-m\cdot g \cdot l = \const.
+\]
+Energieerhaltung:\\
+\fixme[Grafik fehlt]
+\begin{seg}{Versuch Hemmpendel (Übung A18)}
+\fixme[Grafik fehlt]\\
+Einfache Berechnung durch Energiesatz. \\
+\begin{df}
+Wir bezeichnen als \emph{Leistung} die Fähigkeit von Maschinen in einer bestimmten Zeit eine bestimmte Arbeit zu verrichten. Dass heißt Leistung is die pro Zeiteinheit verrichtete Arbeit
+\[
+ P=\frac{dW}{dt}=\frac{d}{dt}\int \vec F d\vec{r}=\vec F\cdot \vec v
+\]
+gemessen in Watt (W) für $\vec  F=\const.$:
+\[
+ 1\text{W}=\frac{1\text{J}}{\s}=\frac{1\kg\cdot \m^2}{\s^3}=\underbrace{\frac{1\kg m}{s^2}}_{[F]}\cdot \underbrace{\frac{m}{s}}_{[v]}
+\]
+früher $1PS=735,5 W$ 
+Mensch: $70\text{W}$ kurzfristige Höchstleistung $3$ kW. Diese Erreichen beispielsweise Gewichtsheber ($\hat=$ $300\kg$ in $1\s$ um $1\m$)\\
+\begin{df}[Wirkungsgrad]
+Wir verstehen unter dem \emph{Wirkungsgrad} $\eta$ die Angabe wie effektiv eine Maschine arbeitet. Sie ist definiert als:
+\[
+ \eta=\frac{\text{Nutzarbeit}}{\text{Gesamtarbeit}}=\eta=\frac{\text{Nutzleistung}}{\text{Gesamtleistung}}
+\]
+\end{df}
+\end{seg}
+\subsection{Äquipotentialflächen}
+Aus bekannter Verteilung von Massen kann mittels Gravitationsgesetz die potentielle Energie einer Probemasse bestimmt werden (analog für Ladungen) potentielle Energie von Probemasse $m$ im Gravitationsfeld der Massen $m_i$:
+\[
+ E_{pot}=\int\underace_{\sum_i\vec F_0^id\vec{r}}_{\vec F_{G, tot}
+\]
+wobei unter $\vec F_{G,tot}$ die Gesamtkraft auf $m$ zu verstehen ist.
+\[
+ \vec F_\alpha^i=\gamma\¢dot \frac{m\cdot m_i}{r_i^2}\cdot\underbrace{\frac{\vec r_i}{|\vec r_i|}}_{\text{\tiny{Richtungsvektor der Länge $1$}}}
+\]
+\underline{aber auch} lässt sich diese aus bekannter bekannter potentielle Energie $E_pot(\vec r)$ bestimmen, denn diese entspricht gerade der Bestimmung der Kräfte die auf die Masse $m$ wirken:
+
+ Für Orte gleicher potentielleer Energie gilt:
+\[
+ \boxed{E_{pot}(\alpha,\gamma, z)=\const.\}
+\]
+Die Fläche die diese Eigenschaft beschreibt bezeichnen wir als Äquipotentialfläche.
+\begin{ex*}
+ Anheben von Masse $m$ von $\vec r_1$ nach $\vec r_2$ im Schwerefeld der Erde
+\[
+ E_{pot}=\int_{r_1}^{r_2} \vec F_G d\vec{r}=\int_{r_1}^{r_2} r \frac{m\cdot M}{r^2}\frac{\vec r}{|\vec r| d\vec{r}
+\]
+da $\vec r||d\vec r$: $E_{pot}=-\gamma\cdot m\cdot M\cdot \int_{r_1}^{r_2}\frac{1}{r^2} dr=\gamma mM\frac{1}{r}|_{r_1}^{r_2}$
+ es soll gelten für $r_2\to \infty$:
+\[
+ \boxed{E_{pot}=-\gamma m M \cdot \frac{1}{r_1}}
+\]
+bzw. für $r=r_1$:
+\[
+ \boxed{E_{pot}(r)=-\gamma m M \cdot \frac{1}{r}
+\]
+\fixme[Grafik fehlt]\\
+Hierbei ist $\Delta E$ die Energie, die freigesetzt wird, wenn Masse aus dem unendlichen auf die Erdoberfläche gebracht wird
+Aufsicht:
+\fixme[Grafik fehlt]
+wegen $E_{pot} \propto \frac{1}{p}$ und damit rotationssymmetrisch:\\
+\fixme[Grafik fehlt]
+Die Linien außenrum sind die Äquipotentiallinien bzw. Flächen in $3D$
+\begin{enumerate}
+\item Entläng Äquipotentialflächen ist keine Energieaufwand zum Verschieben der Masse notwendig
+\item da $\frac{dE_{pot}}{d\vec{r}}=-\vec F$ (aus $E_pot=-\int \nabla F d\vec r$) 
+$\vec F\perp$ Äquipotentialflächen. Die Kraft zeigt entgegen (-) der Richtung der maximalen Änderung der potentiellen Energie.\\
+\fixme[Grafik fehlt]
+\emph{Kraftliniene}(RIchtung der Kraft auf Probemasse). In diesem Beispiel zeigt die Kraft zur Erde.
+\fixme[Grafik fehlt]
+Die Steigung ist dann gerade $-\frac{d E_{pot}}{d\vec{r}}=\vec F$
+Notation: $\vec F=-\grad{E_pot}$. Der Operator/Redenvorschrift $grad$, also der "`Gradient"' entspricht der Steigung:
+\end{enumerate}
+Beachte: $\grad$ wird auf angewendet und ergibt einen Vektor. Schreibweise: $\vec F=-\vec \nabla E_{pot}$, wobei $\nabla$ den Nabla-Operator meint:
+\[
+ \nabla E_{pot}=grad E_pot=\begin{pmatrix} \frac{\del E_{pot}}{dx}\\ \frac{\del E_{pot}}{dy}\\ \frac{\del E_{pot}}{dz} \end{pmatrix}
+\]
+$E_pot$ ist eine beliebig partiell differenzierbare Funktion, dabei gilt $\frac{\del E_{pot}}{\del x}$ Differentiation von  $E_{pot}$ nach $x$ während $y, z$ als konstant behandelt werden. 
+\end{ex*}
+\begin{ex*}
+ \[
+  E_{pot}(x,y,z)=5x^2+7y-6z^3
+ \]
+\[
+ \to \frac{\del E_pot}{\del x}=10x; \frac{\del E_{pot}}{\del y}=z; \frac{\del E_{pot}}{\del z}=-18 z^2
+\]
+Wegen der Eindeutigkeit der potentiellen Energie am Ort $\vec v$ \fixme[Bild fehlt]
+\[
+ \int_{a}{e} \vec F d\vec r=\int_a^e \vec F d\vec r=-\int_e^a \vec F d\vec r
+\]
+geschlossener Weg $\int_a^e Fd\vec{r}+\int_e^a \vec F d\vec{r}=0$ Schreibweise $\int$ mit Kreis!
+\fixme[Rest fehlt] 
+
+
+
+\end{ex*}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ \end{enumerate}
+\end{seg}
+
+
+
+
+
+
+
+
+
+
 
 
 
       
 
-\end{itemize}
+
 
 \end{document}
