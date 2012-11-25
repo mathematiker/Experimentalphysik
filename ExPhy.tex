@@ -843,27 +843,27 @@ In Stuttgart: $24h\hat =273,5°$
 % \begin{seg}{einfache Integrationswege}
 %  \begin{enumerate}
 %   \item Beispiel: Hubarbeit\\
-% \fixme[Bild fehlt]\\
-% Masse $m$ ganz langsam nach oben ziehen von $a$ nach $e$ Kraft hierfür $|\vec F|=|\vec F_G|$. Dies kann man zum Beispiel mit der Federwaage messen.
-% 
-% \[
-%  \vec F d\vec{r} = \begin{pmatrix} F_x\\ F_y\\ F_z \end{pmatrix} \times \begin{pmatrix} dx\\ dy \\ dz \end{pmatrix}=\[
-%  W=\int_{z(a)}^{z(e)} \vec F(\vec r)\cdot d\vec{r}
-% \]\underbrace{F_x dx}_{=0}+\underbrace{F_ydy}_{=0}+F_z dz=F_z dz
-% \]
-% \begin{align*}
-%  W&=\int_{z(a)}^{z(e)} \vec F(\vec r)\cdot d\vec{r}\\
-% &= \int_{z(a)}^{z(e)} m\cdot g dz=mg (z(e)-z(a))=m\cdot g \cdot h
-% \end{align*}
-% jetzt nicht senkrecht sondern schräg.\\
-% \fixme[Bild fehlt]
-% Da $F_g$ nur nach unten wirkt, sind keine Kräfte notwendig, um die Masse in $x-$ und $y-$ Richtung zu verschieben. $\implies F_x=F_y=0_{z(e)}$.
-% \[
-%  W=\int_{x(a)}^{x(e)}0\cdot dx+\int_{y(a)}^{y(e)} 0 dy+\int_{z(a)}^{z(e)} m\cdot g dz=m\cdot g\cdot h
-% \]
-% Arbeit ist unabhängig vom speziellen Weg von $a$ nach $e$\\
-% Schiefe Ebene mit reibungsfreier Unterlage:\\
-% \fixme[Bild fehlt]
+\fixme[Bild fehlt]\\
+Masse $m$ ganz langsam nach oben ziehen von $a$ nach $e$ Kraft hierfür $|\vec F|=|\vec F_G|$. Dies kann man zum Beispiel mit der Federwaage messen.
+
+\[
+ \vec F d\vec{r} = \begin{pmatrix} F_x\\ F_y\\ F_z \end{pmatrix} \times \begin{pmatrix} dx\\ dy \\ dz \end{pmatrix}=
+ W=\int_{z(a)}^{z(e)} \vec F(\vec r)\cdot d\vec{r}
+\underbrace{F_x dx}_{=0}+\underbrace{F_ydy}_{=0}+F_z dz=F_z dz
+\]
+\begin{align*}
+ W&=\int_{z(a)}^{z(e)} \vec F(\vec r)\cdot d\vec{r}\\
+&= \int_{z(a)}^{z(e)} m\cdot g dz=mg (z(e)-z(a))=m\cdot g \cdot h
+\end{align*}
+jetzt nicht senkrecht sondern schräg.\\
+\fixme[Bild fehlt]
+Da $F_g$ nur nach unten wirkt, sind keine Kräfte notwendig, um die Masse in $x-$ und $y-$ Richtung zu verschieben. $\implies F_x=F_y=0_{z(e)}$.
+\[
+ W=\int_{x(a)}^{x(e)}0\cdot dx+\int_{y(a)}^{y(e)} 0 dy+\int_{z(a)}^{z(e)} m\cdot g dz=m\cdot g\cdot h
+\]
+Arbeit ist unabhängig vom speziellen Weg von $a$ nach $e$\\
+Schiefe Ebene mit reibungsfreier Unterlage:\\
+\fixme[Bild fehlt]
 
 Zerlegung von $F_g$ in\\
 $\vec F_H=m\cdot g\cdot \sin \alpha \to \text{führt zur Bewegung}$
@@ -1055,6 +1055,7 @@ gemessen in Watt (W) für $\vec  F=\const.$:
 \]
 früher $1PS=735,5 W$ 
 Mensch: $70\text{W}$ kurzfristige Höchstleistung $3$ kW. Diese Erreichen beispielsweise Gewichtsheber ($\hat=$ $300\kg$ in $1\s$ um $1\m$)\\
+\end{df}
 \begin{df}[Wirkungsgrad]
 Wir verstehen unter dem \emph{Wirkungsgrad} $\eta$ die Angabe wie effektiv eine Maschine arbeitet. Sie ist definiert als:
 \[
@@ -1065,23 +1066,23 @@ Wir verstehen unter dem \emph{Wirkungsgrad} $\eta$ die Angabe wie effektiv eine 
 \subsection{Äquipotentialflächen}
 Aus bekannter Verteilung von Massen kann mittels Gravitationsgesetz die potentielle Energie einer Probemasse bestimmt werden (analog für Ladungen) potentielle Energie von Probemasse $m$ im Gravitationsfeld der Massen $m_i$:
 \[
- E_{pot}=\int\underace_{\sum_i\vec F_0^id\vec{r}}_{\vec F_{G, tot}
+ E_{pot}=\int\underbrace{\sum_i\vec F_0^id\vec{r}}_{\vec F_{G, tot}}
 \]
 wobei unter $\vec F_{G,tot}$ die Gesamtkraft auf $m$ zu verstehen ist.
 \[
- \vec F_\alpha^i=\gamma\¢dot \frac{m\cdot m_i}{r_i^2}\cdot\underbrace{\frac{\vec r_i}{|\vec r_i|}}_{\text{\tiny{Richtungsvektor der Länge $1$}}}
+ \vec F_\alpha^i=\gamma\cdot \frac{m\cdot m_i}{r_i^2}\cdot\underbrace{\frac{\vec r_i}{|\vec r_i|}}_{\text{\tiny{Richtungsvektor der Länge $1$}}}
 \]
 \underline{aber auch} lässt sich diese aus bekannter bekannter potentielle Energie $E_pot(\vec r)$ bestimmen, denn diese entspricht gerade der Bestimmung der Kräfte die auf die Masse $m$ wirken:
 
  Für Orte gleicher potentielleer Energie gilt:
 \[
- \boxed{E_{pot}(\alpha,\gamma, z)=\const.\}
+ \boxed{E_{pot}(\alpha,\gamma, z)=\const.}
 \]
 Die Fläche die diese Eigenschaft beschreibt bezeichnen wir als Äquipotentialfläche.
-\begin{ex*}
+ \begin{ex*}
  Anheben von Masse $m$ von $\vec r_1$ nach $\vec r_2$ im Schwerefeld der Erde
 \[
- E_{pot}=\int_{r_1}^{r_2} \vec F_G d\vec{r}=\int_{r_1}^{r_2} r \frac{m\cdot M}{r^2}\frac{\vec r}{|\vec r| d\vec{r}
+ E_{pot}=\int_{r_1}^{r_2} \vec F_G d\vec{r}=\int_{r_1}^{r_2} r \frac{m\cdot M}{r^2}\frac{\vec r}{|\vec r| d\vec{r}}
 \]
 da $\vec r||d\vec r$: $E_{pot}=-\gamma\cdot m\cdot M\cdot \int_{r_1}^{r_2}\frac{1}{r^2} dr=\gamma mM\frac{1}{r}|_{r_1}^{r_2}$
  es soll gelten für $r_2\to \infty$:
@@ -1089,9 +1090,9 @@ da $\vec r||d\vec r$: $E_{pot}=-\gamma\cdot m\cdot M\cdot \int_{r_1}^{r_2}\frac{
  \boxed{E_{pot}=-\gamma m M \cdot \frac{1}{r_1}}
 \]
 bzw. für $r=r_1$:
-\[
- \boxed{E_{pot}(r)=-\gamma m M \cdot \frac{1}{r}
-\]
+ \[
+  \boxed{E_{pot}(r)=-\gamma m M \cdot \frac{1}{r}}
+ \]
 \fixme[Grafik fehlt]\\
 Hierbei ist $\Delta E$ die Energie, die freigesetzt wird, wenn Masse aus dem unendlichen auf die Erdoberfläche gebracht wird
 Aufsicht:
@@ -1109,7 +1110,7 @@ $\vec F\perp$ Äquipotentialflächen. Die Kraft zeigt entgegen (-) der Richtung 
 Die Steigung ist dann gerade $-\frac{d E_{pot}}{d\vec{r}}=\vec F$
 Notation: $\vec F=-\grad{E_pot}$. Der Operator/Redenvorschrift $grad$, also der "`Gradient"' entspricht der Steigung:
 \end{enumerate}
-Beachte: $\grad$ wird auf angewendet und ergibt einen Vektor. Schreibweise: $\vec F=-\vec \nabla E_{pot}$, wobei $\nabla$ den Nabla-Operator meint:
+ Beachte: $\grad$ wird auf angewendet und ergibt einen Vektor. Schreibweise: $\vec F=-\vec \nabla E_{pot}$, wobei $\nabla$ den Nabla-Operator meint:
 \[
  \nabla E_{pot}=grad E_pot=\begin{pmatrix} \frac{\del E_{pot}}{dx}\\ \frac{\del E_{pot}}{dy}\\ \frac{\del E_{pot}}{dz} \end{pmatrix}
 \]
@@ -1128,25 +1129,154 @@ Wegen der Eindeutigkeit der potentiellen Energie am Ort $\vec v$ \fixme[Bild feh
 \]
 geschlossener Weg $\int_a^e Fd\vec{r}+\int_e^a \vec F d\vec{r}=0$ Schreibweise $\int$ mit Kreis!
 \fixme[Rest fehlt] 
-
-
-
 \end{ex*}
+  \end{enumerate}
+ \end{seg}      
+\subsection{Der Impulserhaltungssatz}
+\underline{\textbf{Frage:}}Reicht der Energieerhaltungsatz aus um Stoßprozesse zu erklären?\\
+\underline{\textbf{Antwort:}} NEIN!\\
 
+\fixme[Grafik fehlt]\\
+\begin{seg}{Im Zeitpunkt $\boxed{t=t_1}$:}
+  gespannte Feder drückt beide Wagen auseinander. Es gilt actio=reactio:
+\[
+ \vec F_1=-\vec F_2
+\]
+(Faden liefert Gegenkräfte)
+\end{seg}
+\begin{seg}{Im Zeitpunkt $\boxed{t=t_2}$:}
+ Wird der Faden durchgeschnitten, wird der Wagen beschleunigt solange sich die Feder audehnt:
+\[
+ m_1\cdot \vec a_1=\vec F_1=-\vec F_2=-m_2\cdot \vec a_2
+\]
+Wenn Feder völlig entspannt, dann gilt $\vec F_1=-\vec F_2=0$ und $\vec v_1', \vec v_2'=\const.$
+\end{seg}
+\begin{seg}{Wie groß sind $v_1'$ und $v_2'$?}
+\[
+ \frac{dv}{dt}=a \implies \int dv=\int a dt
+\]
+\[
+ \int_{t_1}^{t_2}dv=v(t_2)-v(t_1)=\int_{t_1}^{t_2} a dt =\int_{t_1}^{t_2} \frac{F}{m} dt=\frac{1}{m} \int_{t_1}^{t_2} \vec F dt
+\]
+\begin{df}[Impuls]
+ Wir definieren den Impuls $p$ durch:
+\[
+ \vec p =m\cdot \vec v 
+\]
+\[
+ \vec p(t_1)-\vec P(t_2)=\int_{t_1}^{t_2} \vec F dt
+\]
+der Impuls entspricht der Größe eines Kraftstoßes.  Die zugehörige Einheit ist $[\kg \frac{\m}{\s}$.
+\end{df} 
+Alternativ kann man die Kraft definieren als:
+\[
+ \vec F=m\cdot \vec a=m\cdot \frac{d\vec v}{dt}=\frac{d(m\cdot \vec v)}{dt}=\frac{d\vec p}{dt}
+\]
+Zeitpunkt $t=t_1$: $v_1(t_1)=v_2(t_2)=0$\\
+\[
+ \vec F_1'=m_1\cdot \frac{d\vec v_1'}{dt}=-m_2\cdot \frac{d\vec v_1'}{dt}=-\vec F_2'
+\]
+\[
+ \int dt m_1\cdot \vec v_1'=-m_2\cdot \vec v_2'
+\]
+$\vec p_1'=-\vec p_2'$ also $\boxed{\vec p_1'+\vec p_2'=0}$
+\begin{enumerate}[a)]
+ \item $m_1=m_2$, dann folgt $\vec v_1'=-\vec v_2'$
+ \item $m_2=2m_1$, dann folgt $\vec v_1'=-2\cdot \vec v_2$
+\end{enumerate}
+Der Anfangsimpuls sei nicht $0$. \\
+\fixme[Grafik fehlt]
+Wagen 2 hat den gesamten Impuls des Wagens aufgenommen:
+\end{seg}
+\begin{seg}{Impulsbilanz:}
+vor dem Stoß: $\vec p_1+\vec p_2=m_1\cdot \vec v_1+0$\\
+nach dem Stoß: $\vec p_1'+ \vec p_2'=0+m_2\vec v_2'$\\
+für $m_1=m_2$ ergibt sich $\vec v_2'=\vec v_1$
+\end{seg}
+für $m_1=2m_2, \vec v_1\neq 0, \vec v_2=0$
+\begin{seg}{Impulsbilanz:}
+ vor dem Stoß: $m_1\vec v_1+0$
+nach dem Stoß: $m_1\cdot \vec v_1'+2m_1\cdot \vec v_2'$
+\end{seg}
+\begin{seg}{Impulserhaltung}
+ \[
+  \underbrace{m_1\cdot \vec v_1}_{\vec p_1}=\underbrace{m_1\cdot\vec v_1'}_{\vec p_1'}+\underbrace{2m_2\cdot \vec v_2'}_{\vec p_2'}
+ \]
+Er ergibt sich $\vec v_2'=\frac{\vec v_1-\vec v_1'}2$. \\
+\fixme[Grafik fehlt]
+\underline{Allgemein:} Der Gesamtimpuls eines \emph{abgeschlossenenen} Systems ist für alle Zeiten konstant. Dies ist der Impulserhaltungssatz 
+\end{seg}
+\begin{note}
+ Ein System ist abgeschlossen, wenn keine externen Kräfte wirken!
+\end{note}
+\begin{exs*}
+ \begin{itemize}
+  \item Supernova-Explosion
+  \item Supatomarer Bereich
+ \end{itemize}
+\end{exs*}
+ Wie teilt sich die Energie und der Impuls bei entsprechenden Stoßpartner auf! Hierfür benötigen wir sowohl den Energiesatz als auch den Impulserhaltungsatz.
+Vereinfachung durch Betrachtung von Stoßprozessen im Schwerpunktsystem:\\
+\fixme[Grafik]
+\[
+ \vec r_s=\frac{\sum_{i=1}^N m_i\cdot \vec r_1}{\sum_{i=1}^N m_i}
+\]
+Dies entspricht dem \emph{Schwerpunkt}, der Ort aus dem man sich die gesamte Masse in einem Ort vereinigt denken kann.
+\begin{ex*}
+ \fixme[Grafik fehlt]
+\[
+ \vec r_s=m_1\cdot \vec r_1+m_2\cdot \vec r_2/(m_1+m_2)
+\]
+\[
+ m_1\vec r_1+m_2\cdot \vec r_2=\vec r_s(m_1+m_2)
+\]
+\[
+ m_1(\vec r_1-\vec r_s)=m_2(\vec r_s-\vec r_2)
+\]
+\[
+ \vline \frac{\vec r_1-\vec r_s}{\vec r_s-\vec r_2}|=\frac{m_2}{m_1}
+\]
+Der Schwerpunkt teilt die Verbidunglinie im umgekehrten Verhältnis der Massen.\\
+\fixme[Grafik fehlt]
+\end{ex*}
+\begin{df}[Schwerpunktgeschwindigkeit]
+ Wir definieren die \emph{Schwerpunktgeschwindigkeit} $\vec v_s$ als:
+\[
+ \frac{d\vec r_S}{dt}=\frac{\sum m_i \vec v_i}{\sum m_i} = \frac{\vec p}{M}
+\]
+wobei $\vec p$ den Gesamtimpuls und $M$ der Gesamtmasse entsprich:.
+\end{df}
+\begin{df}[Schwerpunktbeschleunigung]
+ Die \emph{Schwerpunktbeschleunigung} $\vec a_s$ defnieren wir als:
+\[
+ \vec a=\frac{d^2\vec r_s}{dt^2}
+\]
+\end{df}
+Es ergibt sich für die Kraft:
+\[
+ \vec F=M\cdot \frac{d^2 \vec r_s}{dt^2}=M\frac{d}{dt}(\frac{d\vec r_s}{dt})=M\cdot \frac{d}{dt} (\frac{\vec p}{M})=\frac{d\vec p}{dt}
+\]
+\begin{df}[Schwerpunkt-System]
+ Koordinatensystem bei dem der Schwerpunkt in Ruhe bleibt (zum Beispiel Schwerpunkt im Ursprung)
+\end{df}
+\[\vec r_s=\const.\]
+\[
+ \frac{d\vec r_s}{dt}=0=\frac{\vec p}{M}\implies \vec p=0
+\]
+Im Schwerpunktsystem ist der Gesamtimpuls zu allen Zeiten 0. Also:
+\[
+ \frac{d\vec p}{dt}=M\frac{d^2\vec r_s}{dt^2}=\sum_{i=1}^n \vec F_i^{ext}
+\]
+Dabei ist $F_i^{ext}$ die \emph{externe Kraft}, die auf $m_i$ wirkt.
+\begin{seg}{Energiebilanz}
+ \[
+  E_{kin}=\frac{1}{2} m v^2=\frac{p^2}{2m}
+ \]
+% \[
+%  \frac{p_1^2}{2m_1}+\frac{p_2^2}{2m_2}=\frac{p'_1^2}{2m_1}+\frac{p'_2^2}{2m_2}+0
+% \]
+% wenn keine Energie beim Stoßprozess verlorengeht (keine Reibung, Verformung). Man bezeichnet solch einen Stoß als \emph{elastischen Stoß}.
 
-
-
-
- 
-
-
-
-
-
-
-
-
- \end{enumerate}
 \end{seg}
 
 
@@ -1157,11 +1287,6 @@ geschlossener Weg $\int_a^e Fd\vec{r}+\int_e^a \vec F d\vec{r}=0$ Schreibweise $
 
 
 
-
-
-
-
-      
 
 
 
