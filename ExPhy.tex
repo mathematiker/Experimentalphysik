@@ -914,7 +914,7 @@ Beispiel für nicht  konservative Kräfte\\
  \item Reibungskraft
  \item Lorentz-Kraft(Geschwindigkeitsabhängig)
 \end{itemize}
-Für eine \underline{eindeutige Definition} von $E_pot$ benötigen wir noch einen Bezugspunkt $p_0$, dieser ist frei wählbar.
+Für eine \underline{eindeutige Definition} von $E_{pot}$ benötigen wir noch einen Bezugspunkt $p_0$, dieser ist frei wählbar.
 Damit $E_{pot}(p):= -\int_{p_0}^{p} \vec F(\vec r)d\vec{r}$.
 Damit entspricht die \emph{potentielle Energie} $E_{pot}$ gerade dem negativen Wert der Arbeit vom Körper von $p_0$ nach $p$ zu bringen.
 \begin{att*}
@@ -925,7 +925,7 @@ Damit entspricht die \emph{potentielle Energie} $E_{pot}$ gerade dem negativen W
 gilt nur für konservative Kräfte
 \end{att*}
 Neben potentieller Energie (statischer Natur zum Beispiel gespannte Feder) kann auch noch Energie in der Bewegung eines Körpers gespeichert werden
-Diese bezeichnen wir als \emph{kinetische Energie} $E_kin$. Wir klären nun den Zusammenhang zwischen $E_{pot}$ und $E_{kin}$?
+Diese bezeichnen wir als \emph{kinetische Energie} $E_{kin}$. Wir klären nun den Zusammenhang zwischen $E_{pot}$ und $E_{kin}$?
 Betrachte Masse $m$ unter Einfluss einer Kraft $\vec F(\vec r)$.\\
 \fixme[Bild fehlt]
 Zur Zeit $t$: Körper am Ort $\vec r(t)$ mit Geschwindigkeit $\vec v(t)$.
@@ -953,7 +953,7 @@ bzw. nach Integration über kleine Wegstrecke:
 \]
  \begin{itemize}
   \item gilt für abgeschlossene Systeme, dass heißt ohne äußere Kräfte
-  \item gilt i Abwesenheit von Reibung sonst $E_kin+E_pot+E_R=\const.$, wobei $E_R$ die durch Reibung in Wärme umgewandelte Energie meint.
+  \item gilt i Abwesenheit von Reibung sonst $E_{kin}+E_{pot}+E_R=\const.$, wobei $E_R$ die durch Reibung in Wärme umgewandelte Energie meint.
  \end{itemize}
 \end{note*}
 \begin{seg}{Anwendungen des Energieerhaltungssatzes}
@@ -962,7 +962,7 @@ bzw. nach Integration über kleine Wegstrecke:
 \fixme[Bild fehlt]
 Am Anfang nur kinetische Energie:
 \[
- E_kin=\frac{1}{2} m v_0^2: E_pot=0
+ E_{kin}=\frac{1}{2} m v_0^2: E_{pot}=0
 \]
 Am Umkehrpunkt:
 nur potentielle Energie $E_{pot}=-g\cdot h$\\
@@ -972,10 +972,10 @@ nur potentielle Energie $E_{pot}=-g\cdot h$\\
 \fixme[Bild fehlt]
 \item Schiefe Ebene ohne Reibung
 \fixme[Bild fehlt]\\
-Masse zunächst in Ruhe, dann loslassen Geschwindigkeit bei $h=0$? zunächst $E_pot=m\cdot g\cdot h; E_{kin}=0$\\
-unte ($h=0$) $E_pot=0; E_kin=\frac{1}{2} mv^2$
+Masse zunächst in Ruhe, dann loslassen Geschwindigkeit bei $h=0$? zunächst $E_{pot}=m\cdot g\cdot h; E_{kin}=0$\\
+unte ($h=0$) $E_{pot}=0; E_{kin}=\frac{1}{2} mv^2$
 \[
- E_pot+E_kin=m\cdot g\cdot h+\frac{1}{2} m v^2
+ E_{pot}+E_{kin}=m\cdot g\cdot h+\frac{1}{2} m v^2
 \]
 da $E_{pot} +E_{kin}=\const.$ (unabhängig von Zeit und Ort)
 \[
@@ -997,9 +997,9 @@ Die pendelnde Kugel legt in der Zeit $dt$ die Strecke $dr=l\cdot d\phi$ zurück:
 \]
 damit ergibt sich für die kibernetische Energie:
 \[
- \boxed{E_kin=\frac{1}{2}mv^2=\frac{ml^2}{2}\cdot \dot \phi^2}
+ \boxed{E_{kin}=\frac{1}{2}mv^2=\frac{ml^2}{2}\cdot \dot \phi^2}
 \]
-Energiesatz: $E_kin+E_pot=\frac{ml^2}{2}\dot \phi(t)^2-m\cdot g\cdot l\cdot \cos{\phi(t)}=E_{pot}=\const.$\\
+Energiesatz: $E_{kin}+E_{pot}=\frac{ml^2}{2}\dot \phi(t)^2-m\cdot g\cdot l\cdot \cos{\phi(t)}=E_{pot}=\const.$\\
 das $E_{pot}=\const.\rightarrow \frac{dE_{pot}}{dt}=0$ und damit:
 \[
  \frac{ml^2}{2}2\dot \phi \ddot \phi+mgl\sin\phi(t)\dot \phi=0
@@ -1041,6 +1041,7 @@ Energiesatz:
 \]
 Energieerhaltung:\\
 \fixme[Grafik fehlt]
+\end{enumerate}
 \begin{seg}{Versuch Hemmpendel (Übung A18)}
 \fixme[Grafik fehlt]\\
 Einfache Berechnung durch Energiesatz. \\
@@ -1063,6 +1064,7 @@ Wir verstehen unter dem \emph{Wirkungsgrad} $\eta$ die Angabe wie effektiv eine 
 \]
 \end{df}
 \end{seg}
+
 \subsection{Äquipotentialflächen}
 Aus bekannter Verteilung von Massen kann mittels Gravitationsgesetz die potentielle Energie einer Probemasse bestimmt werden (analog für Ladungen) potentielle Energie von Probemasse $m$ im Gravitationsfeld der Massen $m_i$:
 \[
@@ -1072,7 +1074,7 @@ wobei unter $\vec F_{G,tot}$ die Gesamtkraft auf $m$ zu verstehen ist.
 \[
  \vec F_\alpha^i=\gamma\cdot \frac{m\cdot m_i}{r_i^2}\cdot\underbrace{\frac{\vec r_i}{|\vec r_i|}}_{\text{\tiny{Richtungsvektor der Länge $1$}}}
 \]
-\underline{aber auch} lässt sich diese aus bekannter bekannter potentielle Energie $E_pot(\vec r)$ bestimmen, denn diese entspricht gerade der Bestimmung der Kräfte die auf die Masse $m$ wirken:
+\underline{aber auch} lässt sich diese aus bekannter bekannter potentielle Energie $E_{pot}(\vec r)$ bestimmen, denn diese entspricht gerade der Bestimmung der Kräfte die auf die Masse $m$ wirken:
 
  Für Orte gleicher potentielleer Energie gilt:
 \[
@@ -1102,26 +1104,26 @@ wegen $E_{pot} \propto \frac{1}{p}$ und damit rotationssymmetrisch:\\
 Die Linien außenrum sind die Äquipotentiallinien bzw. Flächen in $3D$
 \begin{enumerate}
 \item Entläng Äquipotentialflächen ist keine Energieaufwand zum Verschieben der Masse notwendig
-\item da $\frac{dE_{pot}}{d\vec{r}}=-\vec F$ (aus $E_pot=-\int \nabla F d\vec r$) 
+\item da $\frac{dE_{pot}}{d\vec{r}}=-\vec F$ (aus $E_{pot}=-\int \nabla F d\vec r$) 
 $\vec F\perp$ Äquipotentialflächen. Die Kraft zeigt entgegen (-) der Richtung der maximalen Änderung der potentiellen Energie.\\
 \fixme[Grafik fehlt]
 \emph{Kraftliniene}(RIchtung der Kraft auf Probemasse). In diesem Beispiel zeigt die Kraft zur Erde.
 \fixme[Grafik fehlt]
 Die Steigung ist dann gerade $-\frac{d E_{pot}}{d\vec{r}}=\vec F$
-Notation: $\vec F=-\grad{E_pot}$. Der Operator/Redenvorschrift $grad$, also der "`Gradient"' entspricht der Steigung:
+Notation: $\vec F=-\grad{E_{pot}}$. Der Operator/Redenvorschrift $grad$, also der "`Gradient"' entspricht der Steigung:
 \end{enumerate}
  Beachte: $\grad$ wird auf angewendet und ergibt einen Vektor. Schreibweise: $\vec F=-\vec \nabla E_{pot}$, wobei $\nabla$ den Nabla-Operator meint:
 \[
- \nabla E_{pot}=grad E_pot=\begin{pmatrix} \frac{\del E_{pot}}{dx}\\ \frac{\del E_{pot}}{dy}\\ \frac{\del E_{pot}}{dz} \end{pmatrix}
+ \nabla E_{pot}=grad E_{pot}=\begin{pmatrix} \frac{\del E_{pot}}{dx}\\ \frac{\del E_{pot}}{dy}\\ \frac{\del E_{pot}}{dz} \end{pmatrix}
 \]
-$E_pot$ ist eine beliebig partiell differenzierbare Funktion, dabei gilt $\frac{\del E_{pot}}{\del x}$ Differentiation von  $E_{pot}$ nach $x$ während $y, z$ als konstant behandelt werden. 
+$E_{pot}$ ist eine beliebig partiell differenzierbare Funktion, dabei gilt $\frac{\del E_{pot}}{\del x}$ Differentiation von  $E_{pot}$ nach $x$ während $y, z$ als konstant behandelt werden. 
 \end{ex*}
 \begin{ex*}
  \[
   E_{pot}(x,y,z)=5x^2+7y-6z^3
  \]
 \[
- \to \frac{\del E_pot}{\del x}=10x; \frac{\del E_{pot}}{\del y}=z; \frac{\del E_{pot}}{\del z}=-18 z^2
+ \to \frac{\del E_{pot}}{\del x}=10x; \frac{\del E_{pot}}{\del y}=z; \frac{\del E_{pot}}{\del z}=-18 z^2
 \]
 Wegen der Eindeutigkeit der potentiellen Energie am Ort $\vec v$ \fixme[Bild fehlt]
 \[
@@ -1130,8 +1132,9 @@ Wegen der Eindeutigkeit der potentiellen Energie am Ort $\vec v$ \fixme[Bild feh
 geschlossener Weg $\int_a^e Fd\vec{r}+\int_e^a \vec F d\vec{r}=0$ Schreibweise $\int$ mit Kreis!
 \fixme[Rest fehlt] 
 \end{ex*}
-  \end{enumerate}
- \end{seg}      
+
+ \end{seg}
+    
 \subsection{Der Impulserhaltungssatz}
 \underline{\textbf{Frage:}}Reicht der Energieerhaltungsatz aus um Stoßprozesse zu erklären?\\
 \underline{\textbf{Antwort:}} NEIN!\\
@@ -1272,12 +1275,307 @@ Dabei ist $F_i^{ext}$ die \emph{externe Kraft}, die auf $m_i$ wirkt.
  \[
   E_{kin}=\frac{1}{2} m v^2=\frac{p^2}{2m}
  \]
-% \[
-%  \frac{p_1^2}{2m_1}+\frac{p_2^2}{2m_2}=\frac{p'_1^2}{2m_1}+\frac{p'_2^2}{2m_2}+0
-% \]
-% wenn keine Energie beim Stoßprozess verlorengeht (keine Reibung, Verformung). Man bezeichnet solch einen Stoß als \emph{elastischen Stoß}.
+\[
+  \frac{p_1^2}{2m_1}+\frac{p_2^2}{2m_2}=\frac{{p'}_1^2}{2m_1}+\frac{{p'}_2^2}{2m_2}+0
+ \]
+ wenn keine Energie beim Stoßprozess verlorengeht (keine Reibung, Verformung). Man bezeichnet solch einen Stoß als \emph{elastischen Stoß}.
 
 \end{seg}
+\begin{seg}{Zusammenfassung:}
+ Impulserhaltungssatz: $\boxed{\sum_i \vec p_i=\const.}$\\
+ Energieerhaltungssatz: $\boxed{\frac{ p_1^2}{2m_1} + \frac{p_2^2}{2m_2} = \frac{{p'_1}^2}{2m_1}+\frac{{p'}_1^2 }{2m_2}+Q}$,
+wobei $Q=0$ einem elastischen und $Q\neq 0$ einem inelastischen Stoß entspricht. 
+\end{seg}
+Durch Messung von $p_1, p_2, p'_1, p'_2, m_1, m_2$ kann man in Stoßprozessen (Atom- und Kernphysik) auf Anregungenergien schließen.
+\begin{seg}{Analyse von Stoßprozessen}
+ \begin{enumerate}[a]
+  \item \emph{Vollkommen inelastischer Stoß}\\
+\fixme[Grafik fehlt (2x)]\\
+\begin{seg}{Wie groß $\vec v_1'=\vec v_2'$?}
+Aus der Impulserhaltung ergibt sich:
+\[
+ m_1 \vec v_1= (m_1+m_2)\cdot \vec v_1'
+\]
+da Richtung von $\vec v_1$ und $\vec v_2$ identisch sind. Wir müssen also nur mit Beträgen rechnen:
+\[
+ \implies v_1'=\frac{m_1}{m_1+m_2} \cdot v_1
+\]
+Für $m_1=m_2$: $v_1'=\frac{1}{2} v_1$. Es ergibt sich die Energiebilanz für Stoßprozess:
+\[
+ E_{kin}(\text{vor Stoß})=\frac{1}{2}= E_{kin}
+\]
+\[
+ E_{kin}(\text{nach Stoß})= \frac{1}{2} (m_1+m_2)v_1'^2=m_1\cdot \frac{1}{4} v_1^2=\frac{1}{4} m_1 v_1^2=\frac{1}{2} E_{kin}
+\]
+Wohin geht die Energiedifferenz $\frac{1}{2} E_{kin}$?
+Diese wird in Wärme $Q$ überführt, mit der Energieerhaltung:
+\[
+ E_{kin,alt}=E_{kin,neu}+Q
+\]
+ \item \begin{seg}{volkommen elastischer Stoß ($Q=0$)}
+Energiesatz:
+\begin{equation}
+ \frac{p_1^2}{2m_1}+{p_2^2}{2m_2}= \frac{{p'}^2_2}{2m_1} + \frac{{p'}_2^2}{2m_2}    \label{I.3}
+\end{equation}
+Impulserhaltungssatz:
+\begin{equation}
+ \vec p_1 + \vec p_2 = \vec {p'}_1+ \vec {p'}_2 \label{II.3}
+\end{equation}
+\end{seg}
+\begin{enumerate}[(i)]
+\item Sei $m_1=m_2$ bzw. $p_1=0$, dann folgt für \ref{I.3}: $p_1^2={p'}_1^2+{p'}_2^2$ und für \ref{II.3}: $\vec p_1=\vec {p'_1}+\vec{p'_2}$, 
+Es folgt also $p'_1=0$, da nur so \ref{I.3}+\ref{II.3} gleichzeitig erfüllt sein können:
+
+Die Masse 1 bleibt nach dem Stoß in Rue und übertragt Energie und Impuls  vollständig auf Masse 2 wegen \ref{II.2} und $p'_1=0$ $\vec p_1=\vec p'_2$
+\item Sei $m_1=2m_2$ bzw. $p_2=0$ 
+Aus \ref{I.3}: $\frac{p'_1}{2m_2}=\frac{p'_1}{2m_2}+\frac{p_2'}{m_2}$ (Energie), \ref{II.3}: $\vec p_1=\vec p'_1+ \vec p'_2$ (Impuls)
+da zentraler Stoß, sind alle $\vec p_i$ parallel. Da $m_1=2m_2$: alle $\vec p_i$ zeigen in die gleiche Richtung:
+\[
+ \implies \ref{II.3}: p_1=p_1'+p_2'
+\]
+\ref{II.3} in \ref{I.3}: $2p_1'p_2'= p_2'^2 \implies 2p_1'=p_2'$
+
+mit $p_1'=m_1 v_1'$ und $p_2'=\frac{m_1}{2} v_2'$
+\[
+ \ref{II.3} \implies 2m_1 v_1'= \frac{m_1}{2} v_2' \implies v_2'=4 v_1'
+\]
+\item \begin{seg}{Der zentrale Stoß}
+\fixme[Grafik fehlt]
+sofern sich Massen zentral beim Stoß treffen (sich die Luftkissenbahnen) bewegen sich die Massen \emph{vor} und \emph{nach} dem Stoß auf den gleichen Geraden ($\to$ Rechnen mit Beträgen) diese Situation tritt generell auf, wenn die Teilchen über Zentralkräfte wechselwirken.
+\end{seg}
+\begin{exs*}
+ \begin{itemize}
+  \item Gravitationskraft
+  \item Lorenzkraft
+  \item Federkraft
+ \end{itemize}
+\end{exs*}
+\item nicht zentraler elastischer Stoß $Q=0$
+\fixme[Grafik fehlt]
+Es gilt $\vec p_1=\vec p'_1+ \vec p_2'$. Es ergibt sich ein "`Streudreieck"'
+\fixme[Grafik fehlt]
+Dies gilt ausschließlich im \emph{Laborsystem}:
+\end{enumerate}
+\begin{enumerate}[(i)]
+\item test
+% \item \begin{seg}{\emph{Proton-Proton Streuung}}
+% Wir betrachten zum Beispiel die \emph{Proton-Proton Streuung}. Es gilt $m_1=m_2; v_2=0 \implies $ Folie: $90°$-Winkel Zerfall?.
+% Das Problem lässt sich leichter im Schwerpunktsystem berechnen:
+% \[
+%  \vec v_s=\frac{m_1\vec v_1+ m_2 \vec 0}{m_1+m_2}= \frac{m\vec{v}_1}{2m}=\frac{\vec v_1}{2}
+% \]
+% Wie sieht die obige Situation im Schwerepunktsystem aus:
+% ($\hat z$ Beobachter bewegt sich mit $\frac{\vec v_1}{2}$ nach rechts)
+% \end{seg}
+% \begin{itemize}
+%  \item Geschwidigkeit einfallender Teilchen $\vec v_1 \to \frac{\vec v_1}{2}$
+%  \item Geschwindigkeit ruhendes Teilchen $\vec 0 \to - \frac{\vec v_1}{2}$
+%  \item da $\vec p_s=0$ und $m_1=m_2$ müssen die Teilchen nach dem Stoß mit gleich großer aber entgegengesetzeter Geschwindigkeit wegfliegen.
+%  \item Diese Geschwindigkeit ist wegen Energieerhaltung $=\frac{v_1}{2}$
+%  \item vom Schwerpunktsystem betrachtet:\\
+% \fixme[Grafik fehlt]: Geschwindigkeiten vor und nach Stoß jeweils auf einer Linie.
+% \end{itemize}
+% Zurück ins Laborsystem: addiere $\vec v_s$ vektoriell zu den reultierenden Geschwindigkeiten im Schwerpunktsystem:\\
+% \fixme[Grafik fehlt] Geschwindigkeit im Laborsystem: 
+% \fixme[unvollständig]
+% \[
+%  \gamma- \delta\stackrel{(*)}=180°-2\theta_1+180°-2 \theta_2\stackrel{(**)}= 180°
+% \]
+% $\theta_1+\theta_2=90°$ Geschwindigkeiten nach dem Stoß im Laborsystem stehen senkrecht aufeinander.
+% \item $m_2\gg m_1: p_2=0( \implies v_2=0)$\\
+% Energiesatz: $\frac{p_1^2}{2m_1}=\frac{p'_1}{2m_1}+\frax{p_2'}{2m_2}$
+% \[
+%  \implies p_2^2={p'}_1^2+ \frac{m_1}{m_2} {p'}_2^2
+% \]
+% da $m_2\gg m_1 \implies \frac{m_1}{m_2}\approx 0 \to p_1^2 \approx {p_1'}^2; |\vec p_1|=|\vec p_1'|$:
+% Impulserhaltung: $\vec p_1= \vec {p'}_1+\vec {p'_2}$, Wegen $|\vec p_1| \approx |\vec p'_1|$, \fixme[unvollständig]
+% Daraus erhalten wir Energie, die auf $m_z$ übetragen wird.
+% \begin{align*}
+% E'_{2, kin}&= \frac{{P'}^2_2}{2m_2}=\frac{3 P_1^2 \cdot \sin^2(\frac{\phi}{2}}{2m_2}\cdot \frac{m_1}{m_1}\\
+% &= 4 \sin^2(\frac{\phi}{2}) \cdot \frac{p_1^2}{2m_1} \cdot \frac{m_1}{m_2}
+% \end{align*}
+% Der maximale Energieübetraf auf $m_2$ wenn $\sin^2(\frac{\phi}{2})=1$ bzw. $\sin(\frac{\phi}{2})=1 \to \phi=180° \to \vec p_1=-\vec p_1'$, dass heißt $m_1$ wird von $m_2$ reflektiert (Ball gegen Wand).
+% Impulsübetragung: $2p_1 \sin(\frac{\phi}{2})\stackrel{\phi=180°}=2p_1$:
+% kinetische Energie von $m_2$ nach Stoß:
+% \[
+%  {E'}_{2,kin}\stackrel{\phi=180°}= 4\cdot E_{1,kin} \cdot \frac{m_1}{m_2}\approx 0
+% \]
+% da $m_1/m_2\approx 0$, dass heißt $E_{kin}$ (vor dem Stoß) $= E'_{1,kin}$ nach dem Stoß.  
+% Weiteres Beispiel: \emph{Raketenantrieb}:
+% \fixme[Grafik fehlt]\\
+% da $m_Rakete \gg g_{Gus} \to $ Schwerpunkt liegt in Rakete; Geschwindigkeit im Schwerpunktsystem $\approx$ Geschwindigkeit im Laborsystem.
+% Im Schwerpunktsystem (Raktete ausgestoßene Gase) ist Gesamtimpuls $=0$. Änderung des Gesamtimpulses ebenfalls $=0$.
+% \[
+%  \to dp= d(m\cdot v) = \underbrace{m dv}_{dp_{Rakete}} + \underbrace{v dm}_{dp_{Gas}} \stackrel{!}=0
+% \]
+% Ersteres gilt, weil $m\approx \const.$ innerhalb dt ist und zweiteres gilt da $v_Gas \approx \const.$ innerhalb dt.
+% Mit $v= v_{Gas}$
+% \[
+%  mdv= - v_G \cdot dm \to \frac{dm}{m} = - \frac{dV}{V_G}
+% \]
+% Ist: 
+% \[
+%  \int_{m_0}^{m_1} \frac{dm}{m}= - \frac{1}{v} \int_{v_0}^{v_1} v_2, v_0
+% \]
+% \fixme[Rest der Vorlesung fehlt]
+% 
+% 
+% 
+% 
+% 
+\end{enumerate}
+
+
+
+
+\end{seg}
+
+ \end{enumerate}
+\end{seg}
+
+\fixme[Grafiken fehlen]\\
+\subsection{Der Drehimpuls}
+\fixme[Grafik fehlt]
+bisher haben wir in kleine Abschnitte zerlegt.
+\fixme[Grafik fehlt]
+alternativ zerlegt man die Abfolge einer Drehbewegung. Es gilt:
+Wir multiplizieren vektoriell:
+\[
+ \vec r \times \vec F=[\vec r \times \frac{d\vec p}{dt}]
+\]
+\[
+ \frac{d}{dt}[\vec r \times \vec p]=[\underline{\frac{d\vec r}{dt} \times \vec p}_{=0}]+[\vec r \times \frac{d\vec p}{dt}]
+\]
+\[
+ \underbrace{\vec r\times \vec F}_{\vec M}= \frac{d}{dt}\underbrace{[\vec r \times \vec p]}_{\vec L}=\frac{d}{dt}\underbrace{(m[\vec r \times \vec v])}_{\vec L}
+\]
+\[
+ \boxed{\vec M= \frac{d\vec L}{dt}}
+\]
+\begin{itemize}
+ \item $\vec M=\vec r \times \vec F$ Drehmoment
+\begin{ex*}
+ \fixme[Grafik fehlt]
+$\vec M$ bewirkt die Drehung ($\vec M$ bewirkt Drehung ($\vec M$ ist bezüglich eines festen Punktes definiert.)  
+\end{ex*}
+\item $\vec L=m(\vec r \times \vec v)=\vec r \times \vec p$ Drehimpuls
+\[
+ |\vec L|=m\cdot r \cdot v \cdot \sin(\phi), \phi= \angle \{\vec r, \vec v\}
+\]
+\fixme[Grafik fehlt]
+es berechnet sich $\sin \phi=\frac{v_\perp}{v}$
+\end{itemize}
+\begin{seg}{Spezialfall: Kreisbewegung(xy-Ebene)}
+ \fixme[Grafik fehlt]
+\[
+ \vec L = \omega (\vec r \times \vec v)
+\]
+Es ist $\vec L ||\vec z$ und $|\vec L|=m\cdot r \cdot v= m\omega r^2$
+\[
+ \boxed{\vec L=m r^2 \cdot \omega}
+\]
+ \begin{table}[h]
+  \begin{tabular}{c|c}
+ $\vec p=$ linearer Umpuls & $\vec L=$ Drehimpuls\\ 
+ $\vec F= \frac{d\vec p}{dt}$ & $\vec M=\frac{d\vec L}{dt}$
+  \end{tabular}
+ \end{table}
+Falls $\vec M=0$ gilt $\dot{\vec L}=0$, dann ist $\vec L=\const.$. Drehimpulserhaltung sofern keine Drehmomente vorhanden. Wann gilt nun aber $\vec M=0$?
+
+\end{seg}
+\begin{enumerate}[a)]
+ \item $\vec F=0 \to \vec M=0$\\
+\fixme[Grafik fehlt]
+\[
+ \vec L= m(\vec r \times \vec v)=0, \qquad \vec p =m\cdot \vec v \neq 0
+\]
+\item Zentralfeld (Kraftrichtung entsprich dem des Abstandsvektors.\\
+\fixme[Grafik fehlt]
+\begin{align*}
+ \vec F&= f(|\vec r|)\cdot \vec r\\
+ \vec F_G&= \gamma \cdot \frac{m\cdot M}{r^3} \vec r
+\end{align*}
+Dann folgt $M=\vec r \times \vec F=0$ und damit $\dot{\vec L}=0$, also $\vec L=\const.$
+\end{enumerate}
+\begin{seg}{Konsequenzen}
+ \begin{itemize}
+  \item In allen Zentralfelder liegt die Bahn der Massenpunktes in einer Ebene ($\perp \vec L$)
+  \item Es gilt der keplersche Flächensatz (2. Keplersche Gesetz)\\
+\fixme[Grafik fehlt]
+ Kleiner Abstand $\overline{SE}$ wird mit hoher Geschwindigkeit $v$ verstrichen und ein großer Abstand $\overline{SE}$ wird mit kleiner Geschwindigkeit verstrichen. 
+ \end{itemize}
+\end{seg}
+\begin{proof}
+ \fixme[Grafik fehlt]
+\[
+ d\vec r= \vec v \cdot dt
+\]
+\[
+ dA=\frac{1}{2} r \cdot dr\cdot \sin \phi= \frac{1}{2}[\vec v \times d\vec r]
+\]
+Es ist $|\vec r(t)|\approx|\vec r(t+dt)|$
+\begin{align*}
+ dA&=\frac{1}{2}[\vec r \times d \vec r]= \frac{1}{2}|\vec r \times \vec v| dt\\
+\frac{dA}{dt}&= \frac{1}{2}|\vec r \times v|\\
+|\vec L|&= m\cdot |\vec r \times \vec v|=\const.
+\frac{dA}{dt}=\frac{|\vec L|}{2m}=\const.
+\end{align*}
+\fixme[überprüfen]
+\end{proof}
+\begin{st}[1. Keplersche Gesetz]
+ Planeten bewegen sich auf Ellipsen mit Sonne als Brennpunkt.
+\end{st}
+\begin{st}[3. Keplersche Gesetz]
+ \fixme[Grafik fehlt] $b^3$
+\fixme[Satz vervollständigen]
+\end{st}
+\[
+ F=\frac{mv^2}{r}=m \underbrace{\omega^2\cdot r}_{a}
+\]
+radiale Beschleunigung $a= \omega^2 r= (\frac{2\pi}{T})^2r= \frac{4\pi^2}{T^2} r$:
+\[
+ F=\gamma \cdot \frac{Mm}{r^2}
+\]
+\[
+ \frac{\gamma M}{r^2}= \frac{4\pi^2}{T^2} \cdot r \implies \frac{r^3}{T^2}=\frac{\gamma M}{4\phi^2}=\const.
+\]
+Nun besitze $N$ Massenpunkte $m_j$: \fixme[Grafik fehlt]
+\begin{enumerate}
+ \item \underline{innere Kräfte}\\
+        \[
+         F_{ij}=f(\vec r_j- \vec r_i) (\bar r_j-r_i)
+        \]
+	Es ist $\vec F_{ij} || (\vec r_j-\vec r_i)$
+\item \underline{äußere Kräfte auf $m_i: F_i^{ext}$}\\
+\[
+ \frac{d\vec L_i}{dt}=\vec M_i=\vec r_i\times \vec F_i= \vec r_i \times (\sum_{j=1, j\neq i}^N \vec F_{ij}+ \vec F_i^{ext}
+\]
+\end{enumerate}
+\[
+ \frac{d\vec  L^{ges}}{dt}=\sum_{i=1}^n \vec M_i=\sum_{i=1}^N \frac{d\vec L_i}{dt}= \sum_{i,j} [\vec r_i\times \vec F_{ij}]+ \sum_{i=1}^N \vec r_i \times \vec F_i^{ext}
+\]
+Summe über alle Kombination $i,j$ aber $i\neq j$. Wir betrachten die symmetrischen Kombinationen:
+\[
+ \vec r_i\times \vec F_{i,j}+\vec r_j \times \vec F_{j,i}
+\]
+Es gilt actio=reactio $\vec F_ji=-\vec F_{ij}$
+\[
+ (\vec r_i- \vec rj) \times \vec F_{ij}=0
+\]
+Damit liefern die inneren Kräfte keinen Betrag zu $\frac{dL}{dt}$:
+\[
+ \dot {\vec L^{ges}}= \sum_{i=1}^N  \vec r_i \times  \vec F_i^{ext}= \vec M^{ext, ges}
+\]
+wobei $M^{ext, ges}$ der gesamte Drehmoment aufgrund von externen Kräfte:
+\[
+ \boxed{\vec M^{ext}=0 \implies \vec L= \const.}
+\]
+\fixme[Grafik fehlt]
+Es gilt:
+\[
+ \boxed{\vec L= mr^2\cdot \vec \omega}
+\]
+\fixme[Grafiken fehlen]
 
 
 
