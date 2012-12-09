@@ -585,6 +585,35 @@ Für die \emph{Periodendauer} $T$ (Zeit für einen Umlauf) ergibt sich $T=\frac{
 
 Für $\omega=\txt{const.}$ ist auch $|v|=\const$, aber die Richtung von $\vec v$ ändert sich, da sie tangential zur Bahnkurve gerichtet ist. 
 \end{seg}
+\begin{seg}{Zusammenfassung}
+ \fixme[fig31]\\
+\[
+ \vec a = \left ( \frac{dv}{dt}\right ) \cdot \vec u_T + \left ( \frac{v^2}{R} \right ) \vec u_N
+\]
+Es gilt das \emph{Superpositionsprinzip}
+\end{seg}
+\begin{sg}[Kreisbewegung]
+ \fixme[fig32]\\
+\begin{align*}
+ x&=R\cdot \cos \phi\\
+ y&=R\cdot \sin \phi
+\end{align*}
+\[
+ \omega= \frac{d\phi}{dt}
+\]
+\[
+ \phi(t)=\omega\cdot t
+\]
+\begin{align*}
+ x&=R\cdot \cos(\omega t)\\
+ y &= R \cdot \sin(\omega t)
+\end{align*}
+Es handelt sich dann um gleichförmige Kreisbewegungen
+
+
+\end{sg}
+
+
 \fixme[Vorlesung 5 und 6 fehlen]\\
 \fixme[Bild fehlt]\\
 \begin{itemize}
@@ -667,10 +696,11 @@ Wir beschreiben die identische Bahn von $S$ nun auf $\vec r'(t)=\vec r(t)$:
 \end{align*}
 \begin{seg}{Zeitliche Ableitung eines Vektors}
  \fixme[Bild fehlt]
-%   \begin{align*}
-%    |d\vec{u}|&=d\phi\cdot u_\perp\\
-%    |\frac{d\vec{u}}{dt}|&=\frac{dy}{dt}\cdot \vec{e_y}+\frac{dz}{dt}\cdot \vec{e_z}\right )\frac{d\phi}{dt}\cdot u_\perp=|\w|\cdot u_\perp
-%   \end{align*}
+  \begin{align*}
+   |d\vec{u}|&=d\phi\cdot u_\perp\\
+   |\frac{d\vec{u}}{dt}|&=\left (\frac{dy}{dt}\cdot \vec{e_y}+\frac{dz}{dt}
+ \cdot \vec{e_z}\right )\frac{d\phi}{dt}\cdot u_\perp=|\w|\cdot u_\perp
+  \end{align*}
 Es ist $\vec u \cdot \sin\gamma=u_\perp$:
 \[
  |\frac{d\vec{u}}{dt}|=|\w|\cdot |\vec u|\cdot \sin \gamma
@@ -1287,7 +1317,8 @@ Dabei ist $F_i^{ext}$ die \emph{externe Kraft}, die auf $m_i$ wirkt.
 wobei $Q=0$ einem elastischen und $Q\neq 0$ einem inelastischen Stoß entspricht. 
 \end{seg}
 Durch Messung von $p_1, p_2, p'_1, p'_2, m_1, m_2$ kann man in Stoßprozessen (Atom- und Kernphysik) auf Anregungenergien schließen.
-\begin{seg}{Analyse von Stoßprozessen}
+
+\begin{sg}[Analyse von Stoßprozessen]
  \begin{enumerate}[a]
   \item \emph{Vollkommen inelastischer Stoß}\\
 \fixme[Grafik fehlt (2x)]\\
@@ -1312,6 +1343,7 @@ Diese wird in Wärme $Q$ überführt, mit der Energieerhaltung:
 \[
  E_{kin,alt}=E_{kin,neu}+Q
 \]
+\end{seg}
  \item \begin{seg}{volkommen elastischer Stoß ($Q=0$)}
 Energiesatz:
 \begin{equation}
@@ -1358,80 +1390,81 @@ Dies gilt ausschließlich im \emph{Laborsystem}:
 \end{enumerate}
 \begin{enumerate}[(i)]
 \item test
-% \item \begin{seg}{\emph{Proton-Proton Streuung}}
-% Wir betrachten zum Beispiel die \emph{Proton-Proton Streuung}. Es gilt $m_1=m_2; v_2=0 \implies $ Folie: $90°$-Winkel Zerfall?.
-% Das Problem lässt sich leichter im Schwerpunktsystem berechnen:
-% \[
-%  \vec v_s=\frac{m_1\vec v_1+ m_2 \vec 0}{m_1+m_2}= \frac{m\vec{v}_1}{2m}=\frac{\vec v_1}{2}
-% \]
-% Wie sieht die obige Situation im Schwerepunktsystem aus:
-% ($\hat z$ Beobachter bewegt sich mit $\frac{\vec v_1}{2}$ nach rechts)
-% \end{seg}
-% \begin{itemize}
-%  \item Geschwidigkeit einfallender Teilchen $\vec v_1 \to \frac{\vec v_1}{2}$
-%  \item Geschwindigkeit ruhendes Teilchen $\vec 0 \to - \frac{\vec v_1}{2}$
-%  \item da $\vec p_s=0$ und $m_1=m_2$ müssen die Teilchen nach dem Stoß mit gleich großer aber entgegengesetzeter Geschwindigkeit wegfliegen.
-%  \item Diese Geschwindigkeit ist wegen Energieerhaltung $=\frac{v_1}{2}$
-%  \item vom Schwerpunktsystem betrachtet:\\
-% \fixme[Grafik fehlt]: Geschwindigkeiten vor und nach Stoß jeweils auf einer Linie.
-% \end{itemize}
-% Zurück ins Laborsystem: addiere $\vec v_s$ vektoriell zu den reultierenden Geschwindigkeiten im Schwerpunktsystem:\\
-% \fixme[Grafik fehlt] Geschwindigkeit im Laborsystem: 
-% \fixme[unvollständig]
-% \[
-%  \gamma- \delta\stackrel{(*)}=180°-2\theta_1+180°-2 \theta_2\stackrel{(**)}= 180°
-% \]
-% $\theta_1+\theta_2=90°$ Geschwindigkeiten nach dem Stoß im Laborsystem stehen senkrecht aufeinander.
-% \item $m_2\gg m_1: p_2=0( \implies v_2=0)$\\
-% Energiesatz: $\frac{p_1^2}{2m_1}=\frac{p'_1}{2m_1}+\frax{p_2'}{2m_2}$
-% \[
-%  \implies p_2^2={p'}_1^2+ \frac{m_1}{m_2} {p'}_2^2
-% \]
-% da $m_2\gg m_1 \implies \frac{m_1}{m_2}\approx 0 \to p_1^2 \approx {p_1'}^2; |\vec p_1|=|\vec p_1'|$:
-% Impulserhaltung: $\vec p_1= \vec {p'}_1+\vec {p'_2}$, Wegen $|\vec p_1| \approx |\vec p'_1|$, \fixme[unvollständig]
-% Daraus erhalten wir Energie, die auf $m_z$ übetragen wird.
+\item \begin{sg}[Proton-Proton Streuung]
+Wir betrachten zum Beispiel die \emph{Proton-Proton Streuung}. 
+Es gilt $m_1=m_2; v_2=0 \implies $ Folie: $90°$-Winkel Zerfall?.
+Das Problem lässt sich leichter im Schwerpunktsystem berechnen:
+\[
+ \vec v_s=\frac{m_1\vec v_1+ m_2 \vec 0}{m_1+m_2}= \frac{m\vec{v}_1}{2m}=\frac{\vec v_1}{2}
+\]
+Wie sieht die obige Situation im Schwerepunktsystem aus:
+($\hat z$ Beobachter bewegt sich mit $\frac{\vec v_1}{2}$ nach rechts)
+\end{sg}
+\begin{itemize}
+ \item Geschwidigkeit einfallender Teilchen $\vec v_1 \to \frac{\vec v_1}{2}$
+ \item Geschwindigkeit ruhendes Teilchen $\vec 0 \to - \frac{\vec v_1}{2}$
+ \item da $\vec p_s=0$ und $m_1=m_2$ müssen die Teilchen nach dem Stoß mit gleich großer aber entgegengesetzeter Geschwindigkeit wegfliegen.
+ \item Diese Geschwindigkeit ist wegen Energieerhaltung $=\frac{v_1}{2}$
+ \item vom Schwerpunktsystem betrachtet:\\
+\fixme[Grafik fehlt]: Geschwindigkeiten vor und nach Stoß jeweils auf einer Linie.
+\end{itemize}
+Zurück ins Laborsystem: addiere $\vec v_s$ vektoriell zu den reultierenden Geschwindigkeiten im Schwerpunktsystem:\\
+\fixme[Grafik fehlt] Geschwindigkeit im Laborsystem: 
+\fixme[unvollständig]
+\[
+ \gamma- \delta\stackrel{(*)}=180°-2\theta_1+180°-2 \theta_2\stackrel{(**)}= 180°
+\]
+$\theta_1+\theta_2=90°$ Geschwindigkeiten nach dem Stoß im Laborsystem stehen senkrecht aufeinander.
+\item $m_2\gg m_1: p_2=0( \implies v_2=0)$\\
+Energiesatz: $\frac{p_1^2}{2m_1}=\frac{p'_1}{2m_1}+\frac{p_2'}{2m_2}$
+\[
+ \implies p_2^2={p'}_1^2+ \frac{m_1}{m_2} {p'}_2^2
+\]
+da $m_2\gg m_1 \implies \frac{m_1}{m_2}\approx 0 \to p_1^2 \approx {p_1'}^2; |\vec p_1|=|\vec p_1'|$:
+Impulserhaltung: $\vec p_1= \vec {p'}_1+\vec {p'_2}$, Wegen $|\vec p_1| \approx |\vec p'_1|$, \fixme[unvollständig]
+Daraus erhalten wir Energie, die auf $m_z$ übetragen wird.
 % \begin{align*}
 % E'_{2, kin}&= \frac{{P'}^2_2}{2m_2}=\frac{3 P_1^2 \cdot \sin^2(\frac{\phi}{2}}{2m_2}\cdot \frac{m_1}{m_1}\\
 % &= 4 \sin^2(\frac{\phi}{2}) \cdot \frac{p_1^2}{2m_1} \cdot \frac{m_1}{m_2}
 % \end{align*}
-% Der maximale Energieübetraf auf $m_2$ wenn $\sin^2(\frac{\phi}{2})=1$ bzw. $\sin(\frac{\phi}{2})=1 \to \phi=180° \to \vec p_1=-\vec p_1'$, dass heißt $m_1$ wird von $m_2$ reflektiert (Ball gegen Wand).
-% Impulsübetragung: $2p_1 \sin(\frac{\phi}{2})\stackrel{\phi=180°}=2p_1$:
-% kinetische Energie von $m_2$ nach Stoß:
-% \[
-%  {E'}_{2,kin}\stackrel{\phi=180°}= 4\cdot E_{1,kin} \cdot \frac{m_1}{m_2}\approx 0
-% \]
-% da $m_1/m_2\approx 0$, dass heißt $E_{kin}$ (vor dem Stoß) $= E'_{1,kin}$ nach dem Stoß.  
-% Weiteres Beispiel: \emph{Raketenantrieb}:
-% \fixme[Grafik fehlt]\\
-% da $m_Rakete \gg g_{Gus} \to $ Schwerpunkt liegt in Rakete; Geschwindigkeit im Schwerpunktsystem $\approx$ Geschwindigkeit im Laborsystem.
-% Im Schwerpunktsystem (Raktete ausgestoßene Gase) ist Gesamtimpuls $=0$. Änderung des Gesamtimpulses ebenfalls $=0$.
-% \[
-%  \to dp= d(m\cdot v) = \underbrace{m dv}_{dp_{Rakete}} + \underbrace{v dm}_{dp_{Gas}} \stackrel{!}=0
-% \]
-% Ersteres gilt, weil $m\approx \const.$ innerhalb dt ist und zweiteres gilt da $v_Gas \approx \const.$ innerhalb dt.
-% Mit $v= v_{Gas}$
-% \[
-%  mdv= - v_G \cdot dm \to \frac{dm}{m} = - \frac{dV}{V_G}
-% \]
-% Ist: 
-% \[
-%  \int_{m_0}^{m_1} \frac{dm}{m}= - \frac{1}{v} \int_{v_0}^{v_1} v_2, v_0
-% \]
-% \fixme[Rest der Vorlesung fehlt]
-% 
-% 
-% 
-% 
-% 
+Der maximale Energieübetraf auf $m_2$ wenn $\sin^2(\frac{\phi}{2})=1$ bzw. $\sin(\frac{\phi}{2})=1 \to \phi=180° \to \vec p_1=-\vec p_1'$, dass heißt $m_1$ wird von $m_2$ reflektiert (Ball gegen Wand).
+Impulsübetragung: $2p_1 \sin(\frac{\phi}{2})\stackrel{\phi=180°}=2p_1$:
+kinetische Energie von $m_2$ nach Stoß:
+\[
+ {E'}_{2,kin}\stackrel{\phi=180°}= 4\cdot E_{1,kin} \cdot \frac{m_1}{m_2}\approx 0
+\]
+da $m_1/m_2\approx 0$, dass heißt $E_{kin}$ (vor dem Stoß) $= E'_{1,kin}$ nach dem Stoß.  
+Weiteres Beispiel: \emph{Raketenantrieb}:
+\fixme[Grafik fehlt]\\
+da $m_Rakete \gg g_{Gus} \to $ Schwerpunkt liegt in Rakete; Geschwindigkeit im Schwerpunktsystem $\approx$ Geschwindigkeit im Laborsystem.
+Im Schwerpunktsystem (Raktete ausgestoßene Gase) ist Gesamtimpuls $=0$. Änderung des Gesamtimpulses ebenfalls $=0$.
+\[
+ \implies dp= d(m\cdot v) = \underbrace{m dv}_{dp_{Rakete}} + \underbrace{v dm}_{dp_{Gas}} \stackrel{!}=0
+\]
+Ersteres gilt, weil $m\approx \const.$ innerhalb dt ist und zweiteres gilt da $v_Gas \approx \const.$ innerhalb dt.
+Mit $v= v_{Gas}$
+\[
+ mdv= - v_G \cdot dm \to \frac{dm}{m} = - \frac{dV}{V_G}
+\]
+Ist: 
+\[
+ \int_{m_0}^{m_1} \frac{dm}{m}= - \frac{1}{v} \int_{v_0}^{v_1} v_2, v_0
+\]
+\fixme[Rest der Vorlesung fehlt]
+
+
+
+
+
 \end{enumerate}
 
 
 
 
-\end{seg}
+
 
  \end{enumerate}
-\end{seg}
+\end{sg}
 
 \fixme[Grafiken fehlen]\\
 \subsection{Der Drehimpuls}
@@ -1548,7 +1581,7 @@ Nun besitze $N$ Massenpunkte $m_j$: \fixme[Grafik fehlt]
 	Es ist $\vec F_{ij} || (\vec r_j-\vec r_i)$
 \item \underline{äußere Kräfte auf $m_i: F_i^{ext}$}\\
 \[
- \frac{d\vec L_i}{dt}=\vec M_i=\vec r_i\times \vec F_i= \vec r_i \times (\sum_{j=1, j\neq i}^N \vec F_{ij}+ \vec F_i^{ext}
+ \frac{d\vec L_i}{dt}=\vec M_i=\vec r_i\times \vec F_i= \vec r_i \times \left (\sum_{j=1, j\neq i}^N \vec F_{ij}+ \vec F_i^{ext}\right )
 \]
 \end{enumerate}
 \[
@@ -1576,6 +1609,378 @@ Es gilt:
  \boxed{\vec L= mr^2\cdot \vec \omega}
 \]
 \fixme[Grafiken fehlen]
+\begin{seg}{Zusammenfassung:}
+ \begin{itemize}
+  \item Drehmoment: $\boxed{\vec M= \vec r \times \vec F}$
+  \item Drehimpuls: $\boxed{\vec L= m[\vec r \times \vec v]}$
+\[
+ \boxed{\vec M=\frac{d\vec{L}}{dt}}, \qquad
+\]
+\fixme[eine Definition fehlt]
+ \end{itemize}
+\end{seg}
+\section{Mechanik des Starren Körpers}
+\begin{df}[Starrer Körper]
+ Ein \emph{Starrer Körper} System aus $N$ Massepunkten $m_j$, deren gegenseitige Abstände $\vec r_{i,j}$ konstant bleiben.
+\end{df}
+\begin{note}
+ $N$ kann sehr groß werden $\approx 10^23$
+\end{note}
+\begin{ex}(Scheiben)
+\fixme[Grafik fehlt]
+\[
+ dm(\vec r)=\rho (\vec r) dV
+\]
+
+$ \rho= \frac{dm}{dV} \text{ bzw. } \rho=\frac{M}{V} $ für $g=\const.$. starre Körper zeigen keine Verformung 
+\end{ex}
+\subsection{Statik}
+Bedingungen für \emph{mechanisches} Gleichgewicht:\\
+\fixme[Grafik fehlt]
+\[
+ \sum_i \vec F_i =0
+\]
+notwendige Bedingung, i. A. nicht ausreichend.
+\begin{ex}
+ \fixme[Grafik fehlt]
+Dies ergibt die zweite Bedingung für das mechanische Gleichgewicht.
+\fixme[Grafik fehlt]\\
+Es gilt $\vec M_1 = - \vec M_2$ bzw. $\vec M_1+ \vec M_2=0=\frac{d\vec L}{dt}$, es ergibt sich mit dem Gleichgewicht $\vec l \perp \vec F$ und es ergib sich das \emph{Hebelgesetz}:
+\[
+ \boxed{F_1 \times l_1 = F_2 \cdot l_2}
+\]
+Falls $\vec F \not{\perp}$ \fixme \\
+\fixme[Grafik fehlt]\\
+$\vec F_{||}$ also gibt es kein Drehmoment (zieht am Lager):
+\[
+ \vec F_\perp \cdot \vec M=\vec l \times  \vec F_\perp
+\]
+\begin{seg}{Mechanische Gleichgewicht}
+ \[
+  \sum_i \vec F_i=0, \qquad \sum_i \vec M_i=0
+ \]
+\end{seg}
+\end{ex}
+\begin{sg}[Bestimmung des Schwerpunkts]
+ \fixme[Grafik fehlt]\\
+\[
+ \vec M_p=\vec r \times \vec F\stackrel{!}= 0
+\]
+$\vec r ||\vec F$. Schnittpunkte aller Linien $\bar P_m$ ergeben Punkt, auf dem unabhängig von $P$ kein Drehmoment wirkt.
+\end{sg}
+\begin{df}[Lage des Schwerpunkt]
+ Die \emph{Lage des Schwerpunkts} ist definiert als:
+\[
+ \vec{r_s}= \frac{\sum_j m_j \vec r_j}{\sum_j m_j}
+\]
+\end{df}
+\subsubsection*{Unterscheidung von Gleichgewichtslagen}
+\begin{enumerate}
+ \item stabiles Gleichgewicht $P$ über $S$.  Auslenkung $\to $ Anheben von $S$ Austieg von $E_pot$:
+ \item indifferentes Gleichgewicht $P=S$. $E_{pot}$ unabhängig von Orientierung des Körpers.
+ \item labiles Gleichgewicht $S$ oberhalb von $P$. Auch hier gilt $\vec M= \vec r \times \vec F$. aber: bei Störung findet System nicht in dem Ausgangszustand zurück:
+\end{enumerate}
+\begin{sg}(Standfestigkeit)
+ \fixme[Grafik fehlt]
+Projektion von $S$ orthogonal auf Grundfläche müssen innerhalb Standfläche des Körpers liegen. Es kippt nicht.
+\end{sg}
+
+\subsection{Dynamik des starren Körpers}
+\begin{sg}[Translation]
+ analog zu Massenpunktes (Masse im Schwerpunkt vereinigt)
+\[
+ \vec F= M \frac{d^2\vec r_s}{dt^2}
+\]
+\end{sg}
+\begin{sg}[Rotation]
+ hier wird exakte Massenverteilung des Körpers wichtig
+\end{sg}
+\begin{sg}[Drehimpuls eines starren Körpers]
+ \fixme[Grafik fehlt]\\
+alle Massenelemente umkreisen die Drehachse mit gleicher Winkelgeschwindigkeit
+\end{sg}
+\begin{sg}[Drehimpuls einer rotierenden Platte]
+ \fixme[Grafik fehlt]:
+\[
+ \vec L= \sum_j m_j[\vec r_j \times \vec v_j]
+\]
+Richtung von $[\vec r_j \times \vec v_j]$ bestimmt sich zu $[\vec r_j \times \vec v_j]||\vec \omega$. die Länge von $[\vec r_j \times \vec v_j]$ bestimmt sich zu: 
+\[
+ |[\vec r_j \times \vec v_j]|=r_j\times v_J \sin\phi = r_J \times v_j  = r_j^2 \cdot \omega
+\]
+\begin{align*}
+ \vec L&= \sum_j m_j r_j^2 \cdot \vec \omega\\
+ \vec L&= I\cdot \vec \omega
+\end{align*}
+$I=\sum_j m_j r_j^2$ Trägheitsmoment (abhängig von vom Drehachse) 
+\end{sg}
+\begin{sg}[Drehimpuls eines rotationssymmetrischen Körpers]
+\fixme[Grafik fehlt]\\
+Beitrag von $m_j$ und $m_{j'}$ zu $\vec L$
+\[
+ \vec L_jj=m_j[\vec r_j \times \vec v_j]+ m_{j'}[\vec r_{j'}\times \vec v_{j'}]
+\]
+Es gilt $m_j=m_{j'};  \vec v_j=- \vec v_{j'}; \vec r_j-\vec r_{j'}=2\cdot \vec r_{j\perp}$:
+\[
+ \vec L_{jj'}=m_j[(\vec r_j-\vec r_{j'})\times \vec v_j]= 2 m_j[\vec r_{j\perp}\times \vec v_j]
+\]
+\[
+ \vec L_{jj'}=2m_j r_{j\perp}^2\times \vec \omega
+\]
+Gesamtdrehimpuls:
+\[
+ \vec L= \frac{1}{2} \sum_{(j,j')\in \{1,...,N\}\times\{1,...,N\}} L_{jj'}=
+\underbrace{\sum m_j \times r_{j\perp}^2}_{ \vec\omega} \fixme 
+ \]
+\[
+ \vec L=I\times \vec \omega
+\]
+für Rotationsachse, die der Symmetrieachse $\vec L || \vec \omega$.
+\end{sg}
+\begin{sg}[Trägheitsmoment für kontinuierliche Massenverteilung]
+ Wir wollen von der Summe zum Integral übergehen. $I=\int r_\perp^2 \, dm$. Mit $dm=\rho \cdot dV$:
+\[
+ I=\int_x\int_y\int_z \rho(x,y,z) r_\perp^2 \underbrace{dx dy dz}_{dV}
+\] 
+\end{sg}
+
+\begin{seg}{Zusammenfassung}
+ Drehimpuls $\vec L = \sum_j m_j \cdot r_{j\perp}^2\cdot \vec \omega$, mit $\vec L || \vec \omega$ und Trägheitsmoment $ I=\sum_j m_j \cdot r_{j\perp}^2$\\
+\fixme[Grafik fehlt]
+\end{seg}
+Summe zum Integral: 
+\[
+ I=\int r_\perp^2\, dm
+\]
+\[
+ dm=\rho \cdot dV= \rho \cdot dx\cdot dy \cdot dz
+\]
+\[
+ I=\int_z\int_y\int_x \rho(x,y,z) r_\perp^2 \, dx dy dz
+\]
+Dreachse ist die z-Achse, $\rho= \const.$
+\[
+ I=\rho \int_x \int_y \int_x \underbrace{(x^2+y^2)}_{r_\perp^2}\, dx dy dz
+\]
+\begin{ex}
+ \begin{enumerate}[a)]
+  \item 
+\begin{sg}[homogene Kreisscheibe, Achse durch Mittelpunkt:]
+\[
+ dV=dr\cdot r \cdot d\phi \cdot dz
+\]
+\[
+ I=\rho \int_0^R \int_0^{2\pi} \int_0^D r^2 \cdot dr\cdot r \cdot d\phi \cdot dz
+\]
+\[
+\boxed{I=\rho \frac{R^4}{4} 2\pi \cdot D}
+\]
+\[
+ M_0=\pi R^2 D \cdot \rho
+\]
+\[
+ I=\frac{1}{2} M_0 \cdot R^2
+\]
+\end{sg}
+\item 
+\begin{sg}[Holzzylinder(Wandstärke $d\ll R$]
+\fixme[Grafik fehlt]
+\[
+ I=\sum_j m_j r_{j\perp}^2
+\]
+\fixme
+\[
+ I=M_0 \cdot R^2
+\]
+\end{sg}
+\item 
+\begin{sg}[Kugel]
+\[
+ I=\frac{2}{5} \cdot M_0 \cdot R^2
+\]
+\end{sg}
+ \end{enumerate}
+\end{ex}
+\begin{sg}[Falls Drehachse nicht durch SP geht]
+ \fixme[Grafik fehlt]
+\begin{st}[Satz von Steiner]
+\[
+ \boxed{I_2=M_0 \cdot a^2+ I_S}
+\]
+\end{st}
+wobei $I_2$ das Trägheitsmoment bezüglich Achse Nr. 1, bzw. $I_1$ das Trägheitsmoment an der Stelle Nr. 2.
+\[
+ I_2=\int r_{2\perp}^2\cdot dm
+\]
+\begin{enumerate}[a)]
+ \item $r_2^2=y^2+(a-x)^2$
+\item $y^2=r_S^2-x^2$
+\begin{align*}
+ r_2^2&=y^2+a^2-2ax+x^2\\
+&= r_S^2-x^2+a^2ax+x^2
+\end{align*}
+\[
+ F_2=\int r_s^2 \, dm+ a^2 \int \, dm - \underbrace{2a\int x \, dm}_{\text{hebt sich auf $=0$}}
+\]
+Es ergibt sich schließlich:
+\[
+ \boxed{I_2= I_S+ M_0 \cdot a^2}
+\]
+\end{enumerate}
+\end{sg}
+\begin{ex}
+ \fixme[Grafik fehlt]\\
+\begin{align*}
+ I_S&=\frac{1}{2} M_0 R^2\\
+I_2= \frac{1}{2} M_0 R^2+ M_0 R^2= \frac{3}{2} M_0 R^2
+\end{align*}
+\end{ex}
+
+\begin{sg}[Drehimpuls eines beliebig geformten Körpers]
+Wir betrachten folgendes Beispiel
+ \begin{ex}[starke Hantel]
+\[
+ \vec L = m_1 \cdot ( \vec r_1 \times \vec v_1) + m_2 [ \vec r_2 \times \vec v_2]
+\]
+\[
+ \vec v_1 = - \vec v_2, \qquad |\vec r_1| = |\vec r_2|
+\]
+Mit der Rechten-Hand-Regel ergibt sich für die Richtung $\vec L$:  $\vec L \not{||} \vec \omega$ % \fixme
+also $\vec L\neq \const.$.
+ \end{ex}
+\end{sg}
+\begin{sg}[Energie eines starren Rotators]
+ Schwerpunkt sei in Ruhe und damit $E_{kin}^{transl.}=0$\\
+\fixme[Grafik fehlt]:
+\begin{align*}
+ E_{kin}^{rot}&= \sum_j \frac{1}{2} m_j v_j^2 =\frac{1}{2} m_j v_j^2\\
+&= \frac{1}{2} \sum_j m_j (r_j\cdot \omega)^2\\
+&= \frac{1}{2} \underbrace{(\sum m_j r_j^2)}_{I} \omega^2 
+\end{align*}
+\[
+ E_{kin}^{rot}= \frac{1}{2} I \omega^2 = \frac{1}{2} \cdot L \cdot \omega = \frac{1}{2} \frac{L^2}{I}
+\]
+\end{sg}
+\begin{note*}
+ Wir können tatsächlich eine Analogie zur Translationsenergie herstellen. Wir erinnern:
+\[
+ \boxed{E_{kin}^{transl.} = \frac{p^2}{2M}}
+\]
+\end{note*}
+\begin{sg}[$E_{kin}^{rot}$ wenn $\vec L$ und $\vec \omega$ nicht parallel?]
+\[
+ \vec L \cdot \vec \omega= \sum_i m_i \underbrace{[\vec r_i \times \vec v_i] \cdot \vec \omega}_{\text{Spatprodukt}}
+\]
+Allgemein gilt fürs Spatprodukt:
+\[
+ \vec a \times [ \vec b \times \vec c]= \vec b [\vec c \times \vec a]= \vec c \times [ \vec a \times \vec b]
+\]
+\[
+ \vec L \cdot \vec \omega = \sum_i m_i [\vec \omega \times \vec r_i] \cdot \vec v_i
+\]
+\fixme[Grafik fehlt]\\
+$$v=\omega \cdot r: \vec v_i \perp \omega, r_i \to \vec v_i=\vec \omega \times \vec r_i$$
+\[
+ \vec L\cdot \vec \omega = \sum_i m_i \vec v_i \cdot \vec v_i= \sum_i m_i \cdot v_i^2 
+\]
+Es ergibt sich für die Rotationsenergie $E_{kin}^{rot}$:
+\[
+ E_{kin}^{rot}=\frac{1}{2} \sum_i m_i v_i=\frac{1}{2} \vec L \cdot \vec \omega
+\]
+also
+\[
+ \boxed{E_{kin}^{rot}=\frac{1}{2} \vec L \cdot \vec \omega}
+\]
+\end{sg}
+\begin{exs}
+\begin{enumerate}
+ \item Zylinder auf Schiefer Ebene, Masse $M_0$, Radius $R$\\
+\fixme[Grafik fehlt]
+\begin{enumerate}[i)]
+ \item Vollzylinder (mit $I_S=\frac{1}{2} M_0 \cdot R^2$) $M_0 \cdot g \cdot h= \underbrace{\frac{1}{2} M_0 v_S^2}_{E^{transl.}_{kin}}+ \underbrace{\frac{1}{2} I_S \omega^2}_{E_{kin}^{rot}}$
+\[
+ M_0 \cdot g \cdot h = \frac{1}{2} M_0 \cdot v_S^2 + \frac{1}{2} \left( \frac{1}{2} M_0 \cdot R^2\right)\left( \frac{v_S}{R}\right )^2
+\]
+\[
+ v_S=
+\]
+\item Holzzylinder $I_S=M_0 \cdot R^2 \implies v_s= \sqrt{gh}$ für eine reine Gleitbewegung gilt:
+\[
+ M_0\cdot g\cdot h= \frac{1}{2} M_0 \cdot v_S^2
+\]
+\[
+ v_S=\sqrt{2 g h}
+\]
+\end{enumerate}
+\item
+\begin{sg}["`Physikalisches Pendel"']
+ \fixme[Grafiken fehlten]
+\[
+ \vec L_A = I_A \cdot \vec \omega (\vec L ||\omega \text{ wegen Rotationssymmetrie}
+\]
+\[
+ \frac{dL_A}{dt}=\dot L_A= I_A\cdot \dot \omega \stackrel{\omega= \dot \phi}{=}I_A\cdot \ddot \phi= M
+\]
+\[
+ |\vec M|= |\vec a \times \vec F_G|= a\cdot F_G \cdot \sin \phi
+\]
+\[
+ M=-a\cdot F_G \cdot \phi
+\]
+Das Drehmoment wirkt entgegengesetzt zu \fixme.
+\[
+ I_A \cdot \ddot \phi= -a F_G \phi, F_G=M_0 g
+\]
+Es ergibt sich die \emph{Schwingungsgleichung}:
+\[
+ \boxed{\ddot \phi + a \cdot \frac{M_0 g}{I_A} \phi = 0}
+\]
+sowie $\omega_0^2= a\cdot \frac{M_0 g}{I_A}$. Für die Lösung ergibt sich:
+\[
+ \phi(t)=\phi_0 \cdot \cos( \omega_0 t)
+\]
+\[
+ \frac{\omega_0}{2\pi}= \frac{1}{T}= \frac{1}{2\pi} \sqrt{\frac{M_0 \cdot a \cdot g}{M\cdot a + I_s}}
+\]
+\[
+ \boxed{I_A= I_S + M_0 \cdot a^2}
+\]
+\end{sg}
+
+\end{enumerate}
+\end{exs}
+\begin{sg}[Trägheitstensor]
+Bei rotationssymmetrischen Körpern haben wir gesehen:
+\[
+ \vec L = I\cdot \vec \omega, \qquad \vec L ||\vec \omega
+\]
+für asymmetrische Körper $\vec L \not{||}  \vec \omega$ \\ % \fixme
+Wir benuzten an dieser Stelle einen kleinen Trick
+\[
+ \underbrace{I}_{\text{Skalar}} \to \underbrace{\hat I}_{\text{Tensor, Matrix}} \text{ Trägheitstensor }
+\]
+\[
+ \vec L = \hat I \cdot \vec \omega
+\]
+\[
+ \begin{pmatrix} L_x \\ L_y \\ L_z \end{pmatrix} = \begin{pmatrix} I_{xx} & I_{xy} & I_{xz} \\ I_{yx} & ... & \vdots \\ ... & ... & I_{zz}  \end{pmatrix} \cdot \begin{pmatrix} \omega_x \\ \omega-y \\ \omega_z \end{pmatrix}
+\]
+\fixme[Rest fehlt]
+\end{sg}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
