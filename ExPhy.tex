@@ -1,5 +1,6 @@
 \documentclass[a4paper,10pt]{scrartcl}
 \usepackage{physik-vorlesung}
+\usepackage{mathtext}
 
 \title{Experimentalphysik I}
 
@@ -1967,21 +1968,126 @@ Wir benuzten an dieser Stelle einen kleinen Trick
 \]
 \fixme[Rest fehlt]
 \end{sg}
+\begin{seg}{Zusammenfassung:}
+ \fixme[fehlt]
+\end{seg}
 
+\subsection{Der Kreisel}
+starrer Körper  symmetrisch um Figurenachse (Hauptträgheitsachsen)\\
+\fixme[Grafik fehlt]
+\[
+ \vec L=\begin{pmatrix} I_x & & 0 \\ & I_y & \\ 0 & & I_z  \end{pmatrix}
+\]
+für Rotation eine Figurenachsen:
+\[
+ \to \vec L || \vec \omega, \vec M=0=\frac{d\vec{L}}{dt}
+\]
+\fixme[Grafik fehlt]
+$\vec \omega, \vec L$: Betrachten wir die Komponentenzerlegung:
+\begin{enumerate}[a)]
+ \item Rotation in Richtung der Symmetrieachse
+\[
+ \vec \omega_{||}=\vec e_{||} \cdot \omega_{||}, \vec L_{||}=\vec e_{||} \cdot L_{||}= \vec e_{||} \cdot I_{||}\cdot \omega_{||}
+\]
+\item Rotation senkrecht zur Symmetrieachse:
+\[
+ \vec \omega_\perp=\vec e_\perp \cdot \omega_\perp; \vec L_\perp=\vec e_\perp \cdot I_\perp\cdot \omega_\perp
+\]
+\end{enumerate}
+\begin{sg}[Der Kräftefreie Kreisel]
+\fixme[Grafik fehlt]
+\begin{enumerate}[a)]
+ \item da der Kreisel rotationssymmetrisch ist $\vec L || $ Figurenachse. Wegen $\vec M=0$ bleibt Kreisel in jeder Lage stabil ( $\vec L$ ist raumfest)
+ \item Rotationsachse entspricht nicht der Figurenachse:
+Der Momentenstoß (kurzes Drehmoment)
+\end{enumerate}
 
+\begin{note}
+ vgl. mit Kraftstoß: $\int \vec F \, dt= \vec p$
+\end{note}
+\begin{seg}{Momentenstoß}
+ Sei $\Delta T= t_e-t_a$, so ergibt sich:
+\[
+ \int_{t_a}^{t_e} \vec M\, dt= \int_{t_a}^{t_e} \frac{d\vec{L}}{dt}\, dt= L_e-L_a
+\]
+\[
+ \vec L_e= \vec L_a+ \int_{t_a}^{t_e}\vec M \, dt 
+\]
+nach dem Momentenstoß gilt $\boxed{\vec L=\const.}$.  Die Endpunkt der Kreilachse bewegt sich bezüglich der Kreisbahn. Dies bezeichnet man als \emph{Nutation}
+\end{seg}
+\begin{seg}{Momentaufnahme}
+ \fixme[Grafik fehlt]\\
+$L_{||}, L_\perp$ bezüglich Hauptträgheitsachsen:
+\[
+\hat I= \begin{pmatrix} I_{||} & & 0 \\ & I_{\perp x} & \\ 0 & & I_{xy} \end{pmatrix} %Tensor
+\]
+wobei $L_{||}= I_{||}\cdot \omega_{||}$ und $L_{\perp}=I_\perp \cdot \omega_\perp$
+\[
+ \frac{L_{||}}{L_\perp}=\underbrace{\frac{I_{||}}{I_\perp}}_{\neq 1} \cdot \frac{\omega_{||}}{\omega_\perp}
+\]
+und damit sind $\vec L$ und $\vec \omega$ nicht richtungsgleich.
+\end{seg}
+\end{sg}
+\begin{sg}[Wie sieht eine Nutationsbewegung aus?]
+\fixme[Grafik fehlt]
+ \begin{itemize}
+  \item $\vec L$ ist raumfest
+  \item $\vec \omega (t)$ und $\vec K(t)$ rotieren auf Kegelmänter um $\vec L$
+  \item zu jedem Zeitpunkt gilt $\vec L, \vec K(t), \vec \omega(t)$ liegen in einer Ebene
+ \end{itemize}
+Wähle Körperfestes Koordinatensystem, wo $\vec y$-Achse steht senkrecht zur Ebene $\vec K(t)=\vec L$:
+\[
+ Ly=\underbrace{I_{y}}_{\neq 0} \cdot \omega_y = 0 \implies \omega_y=0
+\]
+\fixme[Grafik fehlt]\\
+Kreisel unter Einfluss eines \emph{permanenten} Drehmoments zu Präzession.\\
+\fixme[Grafik fehlt]
+$\vec L \neq \const.$ $d\vec L || \vec M$, $dL=L\cdot \, d\phi=M\cdot dt$
+\[
+ \vec L \neq \const., \qquad d\vec{L} ||\vec M 
+\]
+\[
+ \boxed{dL=L\cdot d\phi=M\cdot dt}
+\]
+\[
+ \frac{d\phi}{dt}=\underbrace{\omega p}_{\text{Präzession}} = \frac{M}{L}=\frac{M}{I\cdot \omega}
+\]
+\[
+ \boxed{\omega p=\frac{M}{I\cdot \omega}}
+\]
+bisher $\vec L \perp \vec F_G$\\
+\fixme[Grafik fehlt]\\
+\fixme[Übersicht fehlt]
+\[
+ \omega p=\frac{d\phi}{dt}=\frac{dL}{L\cdot \sin{\alpha} dt}=\frac{R\cdot m \cdot g}{I\cdot \omega}
+\]
+\[
+ \omega_p \text{ unabhängig von $\alpha$} 
+\]
+\end{sg}
+\subsection{Quantisierung des Drehimpulses}
+\[
+ E=h\omega
+\]
+analog Drehimpuls:\\
+$\vec L$ nur in ganz- oder halbzahlige Vielfachen einer fundamentalen Grundeinheit.
+\[
+% \cyrdje \cyrdje= \frac{h}{2\pi}= 1.0544 \cdot 10^{-34} \frac{\kg \m^2}{\s} %zeichen nachschauen \cyrdje
+\]
+$h:$ Planksches Wirkungsquantum:
+\[
+ [L]=I\cdot \omega= \frac{\kg \m^2}{\s}
+\]
 
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{ex}[Rotation eines Stickstoffmoleküls]
+ $\approx$ starre Hantel.\\
+\fixme[zwei Slides fehlen]
+\end{ex}
+\begin{ex}[Wasserstoffatome]
+ \fixme[zwei Slides]
+\end{ex}
+Stabile Kreisbahnen:
+\fixme[Rest der Vorlesung fehlt]
 
 
 
